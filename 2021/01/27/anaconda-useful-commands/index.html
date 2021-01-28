@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/cat.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      11 字
+      118 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -227,7 +227,9 @@
             <h1 style="display: none">anaconda useful commands</h1>
             
             <div class="markdown-body">
-              <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next<br></code></pre></td></tr></table></figure>
+              <h1 id="Basic-usage-of-conda"><a href="#Basic-usage-of-conda" class="headerlink" title="Basic usage of conda"></a>Basic usage of conda</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># managing conda</span><br>conda --version 		<span class="hljs-comment"># check the installation and version</span><br>conda update conda 		<span class="hljs-comment"># update the conda to the latest version</span><br><br><span class="hljs-comment"># managing environment and python</span><br>conda create -n name python=<span class="hljs-number">3.8</span>		<span class="hljs-comment"># create a new virtual environment</span><br>conda activate name				   <span class="hljs-comment"># activate the environment</span><br>conda info --envs				   <span class="hljs-comment"># to see a list of all your environments</span><br>conda activate				       <span class="hljs-comment"># return to base</span><br>python --version				   <span class="hljs-comment"># to check the version of python</span><br><br><span class="hljs-comment"># managing packages</span><br>conda search torch				   <span class="hljs-comment"># check to see if a package you have not installed named &quot;torch&quot; is available from the Anaconda repository (online)</span><br>conda install pandas			   <span class="hljs-comment"># install a certain package</span><br>conda <span class="hljs-built_in">list</span>						  <span class="hljs-comment"># list all packages installed in the environment</span><br><br><br></code></pre></td></tr></table></figure>
+<p>For the packages not in Anaconda, we can simply use the pip command to install them.</p>
+
             </div>
             <hr>
             <div>
