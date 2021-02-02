@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Archives - Hexo</title>
+  <title>Useful Python - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -47,7 +63,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -146,9 +162,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Archive">
+            <span class="h2" id="subtitle" title="Useful Python">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-02 15:51" pubdate>
+        February 2, 2021 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      199 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -161,52 +214,92 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">5 posts in total.</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/01/28/Frame-Recurrent-Video-Super-Resolution/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Frame-Recurrent Video Super-Resolution(CVPR 2018)</span>
-      <time style="float: right;">01-28</time>
-    </a>
-  
-    
-    <a href="/2021/01/27/anaconda-useful-commands/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">anaconda useful commands</span>
-      <time style="float: right;">01-27</time>
-    </a>
-  
-    
-    <a href="/2021/01/17/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">01-17</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Useful Python</h1>
+            
+            <div class="markdown-body">
+              <h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul>
+<li><code>str.split(str = &#39; &#39;, num = num)</code>, 传入str字符串作为分割字符，把str分割成num+1个字符串，并返回一个list</li>
+<li><code>hasattr(object, name = &#39;name&#39;)</code>，传入对象，用于判断object钟是否包含对象属性name，返回bool</li>
+</ul>
+<h1 id="MMCV"><a href="#MMCV" class="headerlink" title="MMCV"></a>MMCV</h1><h2 id="1-1自定义扩展开发I-O"><a href="#1-1自定义扩展开发I-O" class="headerlink" title="1.1自定义扩展开发I/O"></a>1.1自定义扩展开发I/O</h2><h3 id="1-1-1"><a href="#1-1-1" class="headerlink" title="1.1.1"></a>1.1.1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">@register_handle(<span class="hljs-params"><span class="hljs-string">&#x27;npy&#x27;</span></span>)			</span><span class="hljs-comment">#装饰器，把实现的handler注册到mmcv钟，然后mmcv就可以直接找到该handler。</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NpyHandler</span>(<span class="hljs-params">BaseFileHandler</span>):</span><br>    <br>    <span class="hljs-comment"># np.save, np.load,  https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html</span><br>	<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_from_fileobj</span>(<span class="hljs-params">self, file, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> np.load(file)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_fileobj</span>(<span class="hljs-params">self, obj, file, **kwargs</span>):</span><br>        np.save(file, obj)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_str</span>(<span class="hljs-params">self, obj, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> obj.tobytes()<br></code></pre></td></tr></table></figure>
+<p>对外读写接口：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#文件读取流程。</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load</span>(<span class="hljs-params">file, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function">	<span class="hljs-title">return</span> <span class="hljs-title">obj</span></span><br><span class="hljs-function"></span><br><span class="hljs-function">#文件写流程</span><br><span class="hljs-function"><span class="hljs-title">def</span> <span class="hljs-title">dump</span>(<span class="hljs-params">obj, file = <span class="hljs-literal">None</span>, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">import</span> <span class="hljs-title">mmcv</span></span><br>data = mmcv.load(&quot;test.json&quot;)<br>mmcv.dump(data, <span class="hljs-string">&quot;out.json&quot;</span>)<br></code></pre></td></tr></table></figure>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/python/">python</a>
+                    
+                      <a class="hover-with-bg" href="/tags/tutorial/">tutorial</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/02/File-IO/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">File IO</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/28/Frame-Recurrent-Video-Super-Resolution/">
+                        <span class="hidden-mobile">Frame-Recurrent Video Super-Resolution(CVPR 2018)</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -286,9 +379,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 

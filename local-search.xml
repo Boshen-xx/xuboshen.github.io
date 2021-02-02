@@ -4,6 +4,50 @@
   
   
   <entry>
+    <title>File IO</title>
+    <link href="/2021/02/02/File-IO/"/>
+    <url>/2021/02/02/File-IO/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Numpy-read-and-write"><a href="#Numpy-read-and-write" class="headerlink" title="Numpy read and write"></a>Numpy read and write</h1><h2 id="tofile-and-fromfile"><a href="#tofile-and-fromfile" class="headerlink" title="tofile() and fromfile()"></a>tofile() and fromfile()</h2><ul><li>tofile()将数组中的数据以二进制的格式写进文件</li><li>tofile()输出的数据不保存数组形状和元素类型等信息</li><li></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = np.arrange(<span class="hljs-number">0</span>, <span class="hljs-number">12</span>)<br>a.tofile(<span class="hljs-string">&quot;a.bin&quot;</span>)<br>b = np.fromfile(<span class="hljs-string">&quot;a.bin&quot;</span>, dtype = np.int32)<br></code></pre></td></tr></table></figure><h2 id="Reading-text-and-CSV-files"><a href="#Reading-text-and-CSV-files" class="headerlink" title="Reading text and CSV files"></a>Reading text and CSV files</h2><p>CSV： comma-separated values</p><h3 id="没有任何遗漏数据"><a href="#没有任何遗漏数据" class="headerlink" title="没有任何遗漏数据"></a>没有任何遗漏数据</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>file io</tag>
+      
+      <tag>python</tag>
+      
+      <tag>tutorial</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Useful Python</title>
+    <link href="/2021/02/02/Useful-Python/"/>
+    <url>/2021/02/02/Useful-Python/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul><li><code>str.split(str = &#39; &#39;, num = num)</code>, 传入str字符串作为分割字符，把str分割成num+1个字符串，并返回一个list</li><li><code>hasattr(object, name = &#39;name&#39;)</code>，传入对象，用于判断object钟是否包含对象属性name，返回bool</li></ul><h1 id="MMCV"><a href="#MMCV" class="headerlink" title="MMCV"></a>MMCV</h1><h2 id="1-1自定义扩展开发I-O"><a href="#1-1自定义扩展开发I-O" class="headerlink" title="1.1自定义扩展开发I/O"></a>1.1自定义扩展开发I/O</h2><h3 id="1-1-1"><a href="#1-1-1" class="headerlink" title="1.1.1"></a>1.1.1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">@register_handle(<span class="hljs-params"><span class="hljs-string">&#x27;npy&#x27;</span></span>)</span><span class="hljs-comment">#装饰器，把实现的handler注册到mmcv钟，然后mmcv就可以直接找到该handler。</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NpyHandler</span>(<span class="hljs-params">BaseFileHandler</span>):</span><br>    <br>    <span class="hljs-comment"># np.save, np.load,  https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_from_fileobj</span>(<span class="hljs-params">self, file, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> np.load(file)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_fileobj</span>(<span class="hljs-params">self, obj, file, **kwargs</span>):</span><br>        np.save(file, obj)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_str</span>(<span class="hljs-params">self, obj, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> obj.tobytes()<br></code></pre></td></tr></table></figure><p>对外读写接口：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#文件读取流程。</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load</span>(<span class="hljs-params">file, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function"><span class="hljs-title">return</span> <span class="hljs-title">obj</span></span><br><span class="hljs-function"></span><br><span class="hljs-function">#文件写流程</span><br><span class="hljs-function"><span class="hljs-title">def</span> <span class="hljs-title">dump</span>(<span class="hljs-params">obj, file = <span class="hljs-literal">None</span>, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">import</span> <span class="hljs-title">mmcv</span></span><br>data = mmcv.load(&quot;test.json&quot;)<br>mmcv.dump(data, <span class="hljs-string">&quot;out.json&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>tutorial</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Frame-Recurrent Video Super-Resolution(CVPR 2018)</title>
     <link href="/2021/01/28/Frame-Recurrent-Video-Super-Resolution/"/>
     <url>/2021/01/28/Frame-Recurrent-Video-Super-Resolution/</url>
