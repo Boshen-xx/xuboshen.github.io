@@ -4,6 +4,69 @@
   
   
   <entry>
+    <title>EDSR code reading</title>
+    <link href="/2021/02/15/EDSR-code-reading/"/>
+    <url>/2021/02/15/EDSR-code-reading/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/xinntao/EDVR/tree/master/basicsr/models">https://github.com/xinntao/EDVR/tree/master/basicsr/models</a></p><h1 id="1-Python基础库"><a href="#1-Python基础库" class="headerlink" title="1.Python基础库"></a>1.Python基础库</h1><h2 id="1-1-logging"><a href="#1-1-logging" class="headerlink" title="1.1 logging"></a>1.1 logging</h2><p><a href="https://cloud.tencent.com/developer/article/1354396">https://cloud.tencent.com/developer/article/1354396</a></p><ul><li>功能：用作记录项目运行中的信息记录</li></ul><h2 id="1-2-os"><a href="#1-2-os" class="headerlink" title="1.2 os"></a>1.2 os</h2><p><a href="https://www.runoob.com/python/os-file-methods.html">https://www.runoob.com/python/os-file-methods.html</a></p><ul><li>功能：提供丰富的方法用来处理文件和目录</li></ul><h2 id="1-3-collections"><a href="#1-3-collections" class="headerlink" title="1.3 collections"></a>1.3 collections</h2><p><a href="https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456">https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456</a></p><ul><li>功能：提供很多集合类<ul><li>nametuple：用来创建自定义tuple并规定tuple元素的个数</li><li>deque：双向链表。有append、appendleft、pop、popleft等方法。</li><li>defaultdict：使用dict时，如果引用的key不存在，就会抛出keyerror。如果希望key不存在时返回一个默认值就可以用这个。</li><li>OrderedDict：可以实现一个FIFO的dict，当容器超出显示时，先删除最早添加的key</li></ul></li></ul><h2 id="1-4-copy"><a href="#1-4-copy" class="headerlink" title="1.4 copy"></a>1.4 copy</h2><ul><li>功能：提供通用的浅层和深层copy操作<ul><li>浅拷贝<code>copy.copy(x)</code>：复制父对象，子对象使用引用的方式。</li><li>深拷贝<code>copy.deepcopy(x)</code>：复制对象和对象的所有子对象。</li></ul></li></ul><h2 id="1-5-python面向对象"><a href="#1-5-python面向对象" class="headerlink" title="1.5 python面向对象"></a>1.5 python面向对象</h2><ul><li>子类需要自动调用父类的方法：子类不重写init方法</li><li>子类不需要自动调用父类方法：重写init方法</li><li>子类重写init方法又需要调用父类的方法：用super关键字：<code>super(子类, self).__init__(arguments)</code></li></ul><h1 id="2-第三方库"><a href="#2-第三方库" class="headerlink" title="2. 第三方库"></a>2. 第三方库</h1><h2 id="2-1-torch"><a href="#2-1-torch" class="headerlink" title="2.1 torch"></a>2.1 torch</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>EDSR</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Vimtutor</title>
+    <link href="/2021/02/15/Vimtutor/"/>
+    <url>/2021/02/15/Vimtutor/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Vimtutor总结"><a href="#Vimtutor总结" class="headerlink" title="Vimtutor总结"></a>Vimtutor总结</h1><h2 id="Lesson-1-瞎转悠"><a href="#Lesson-1-瞎转悠" class="headerlink" title="Lesson 1 瞎转悠"></a>Lesson 1 瞎转悠</h2><p>假设现在你已经在Vim编辑器下了，但现在不知所措，尝试性地想按键盘去打字，诶发现做不到，每个字母竟然打不出来！偶尔光标上移一下，不知道按了啥键屏幕下边出现了一个“INSERT”，神奇地可以开始编辑了！但又不知道怎么移动光标了，但别郁闷，不管现在处于什么模式，你先按下“ESC”键，回归到初始的“Normal mode”，就好像打羽毛球、乒乓球都强调接球后要回到中场一样的意思。</p><p>那么在Vim模式下怎么上下左右移动curser光标呢？现在给出对应：</p><table><thead><tr><th align="center">按键</th><th align="center">意义</th></tr></thead><tbody><tr><td align="center">k（small case，下同）</td><td align="center">光标上移</td></tr><tr><td align="center">j</td><td align="center">光标下移</td></tr><tr><td align="center">h</td><td align="center">光标左移</td></tr><tr><td align="center">l</td><td align="center">光标右移</td></tr></tbody></table><p>需要注意的是在Vim中大小写的差异可大了，同学们需要时刻注意大小写的问题！不然会出现很多问题呢。</p><p>兴奋地在当前的文本中徜徉后很快就感到厌烦，why？因为移动得实在是太慢了！！！别怕，我来告诉你一些超级简单的命令，你会爱上这种精准而优雅的移动的：</p><p>在修改代码的时候，我们经常会精确移动多少个词（space seperated），于是有以下命令：</p><table><thead><tr><th align="center">连续按键</th><th align="center">意义</th></tr></thead><tbody><tr><td align="center">自然数(n)+e</td><td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词末尾</td></tr><tr><td align="center">自然数+w</td><td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td></tr><tr><td align="center">自然数+b</td><td align="center">向前跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td></tr></tbody></table><p>现在你可以开心地跳过很多单词了！然后如果你需要</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>tutorial</tag>
+      
+      <tag>vim</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linux Basic Commands</title>
+    <link href="/2021/02/04/Linux-Basic-Commands/"/>
+    <url>/2021/02/04/Linux-Basic-Commands/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h1><p>修改文件权限：chmod</p><p>修改文件时间为当前，不存在则创建文件：touch</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+      <tag>Shell</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>File IO</title>
     <link href="/2021/02/02/File-IO/"/>
     <url>/2021/02/02/File-IO/</url>
@@ -14,11 +77,11 @@
     
     <tags>
       
-      <tag>tutorial</tag>
-      
       <tag>python</tag>
       
       <tag>file io</tag>
+      
+      <tag>tutorial</tag>
       
     </tags>
     
@@ -37,9 +100,9 @@
     
     <tags>
       
-      <tag>tutorial</tag>
-      
       <tag>python</tag>
+      
+      <tag>tutorial</tag>
       
     </tags>
     

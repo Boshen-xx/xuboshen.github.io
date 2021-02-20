@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>File IO - Hexo</title>
+  <title>Vimtutor - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="File IO">
+            <span class="h2" id="subtitle" title="Vimtutor">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-02 20:23" pubdate>
-        February 2, 2021 pm
+      <time datetime="2021-02-15 13:53" pubdate>
+        February 15, 2021 pm
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      84 字
+      469 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      4
        分钟
     </span>
   
@@ -232,17 +232,59 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">File IO</h1>
+            <h1 style="display: none">Vimtutor</h1>
             
             <div class="markdown-body">
-              <h1 id="Numpy-read-and-write"><a href="#Numpy-read-and-write" class="headerlink" title="Numpy read and write"></a>Numpy read and write</h1><h2 id="tofile-and-fromfile"><a href="#tofile-and-fromfile" class="headerlink" title="tofile() and fromfile()"></a>tofile() and fromfile()</h2><ul>
-<li>tofile()将数组中的数据以二进制的格式写进文件</li>
-<li>tofile()输出的数据不保存数组形状和元素类型等信息</li>
-<li></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = np.arrange(<span class="hljs-number">0</span>, <span class="hljs-number">12</span>)<br>a.tofile(<span class="hljs-string">&quot;a.bin&quot;</span>)<br>b = np.fromfile(<span class="hljs-string">&quot;a.bin&quot;</span>, dtype = np.int32)<br></code></pre></td></tr></table></figure>
-<h2 id="Reading-text-and-CSV-files"><a href="#Reading-text-and-CSV-files" class="headerlink" title="Reading text and CSV files"></a>Reading text and CSV files</h2><p>CSV： comma-separated values</p>
-<h3 id="没有任何遗漏数据"><a href="#没有任何遗漏数据" class="headerlink" title="没有任何遗漏数据"></a>没有任何遗漏数据</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>
+              <h1 id="Vimtutor总结"><a href="#Vimtutor总结" class="headerlink" title="Vimtutor总结"></a>Vimtutor总结</h1><h2 id="Lesson-1-瞎转悠"><a href="#Lesson-1-瞎转悠" class="headerlink" title="Lesson 1 瞎转悠"></a>Lesson 1 瞎转悠</h2><p>假设现在你已经在Vim编辑器下了，但现在不知所措，尝试性地想按键盘去打字，诶发现做不到，每个字母竟然打不出来！偶尔光标上移一下，不知道按了啥键屏幕下边出现了一个“INSERT”，神奇地可以开始编辑了！但又不知道怎么移动光标了，但别郁闷，不管现在处于什么模式，你先按下“ESC”键，回归到初始的“Normal mode”，就好像打羽毛球、乒乓球都强调接球后要回到中场一样的意思。</p>
+<p>那么在Vim模式下怎么上下左右移动curser光标呢？现在给出对应：</p>
+<table>
+<thead>
+<tr>
+<th align="center">按键</th>
+<th align="center">意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">k（small case，下同）</td>
+<td align="center">光标上移</td>
+</tr>
+<tr>
+<td align="center">j</td>
+<td align="center">光标下移</td>
+</tr>
+<tr>
+<td align="center">h</td>
+<td align="center">光标左移</td>
+</tr>
+<tr>
+<td align="center">l</td>
+<td align="center">光标右移</td>
+</tr>
+</tbody></table>
+<p>需要注意的是在Vim中大小写的差异可大了，同学们需要时刻注意大小写的问题！不然会出现很多问题呢。</p>
+<p>兴奋地在当前的文本中徜徉后很快就感到厌烦，why？因为移动得实在是太慢了！！！别怕，我来告诉你一些超级简单的命令，你会爱上这种精准而优雅的移动的：</p>
+<p>在修改代码的时候，我们经常会精确移动多少个词（space seperated），于是有以下命令：</p>
+<table>
+<thead>
+<tr>
+<th align="center">连续按键</th>
+<th align="center">意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">自然数(n)+e</td>
+<td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词末尾</td>
+</tr>
+<tr>
+<td align="center">自然数+w</td>
+<td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
+</tr>
+<tr>
+<td align="center">自然数+b</td>
+<td align="center">向前跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
+</tr>
+</tbody></table>
+<p>现在你可以开心地跳过很多单词了！然后如果你需要</p>
 
             </div>
             <hr>
@@ -253,11 +295,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/python/">python</a>
-                    
-                      <a class="hover-with-bg" href="/tags/file-io/">file io</a>
-                    
                       <a class="hover-with-bg" href="/tags/tutorial/">tutorial</a>
+                    
+                      <a class="hover-with-bg" href="/tags/vim/">vim</a>
                     
                   </div>
                 
@@ -270,9 +310,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/04/Linux-Basic-Commands/">
+                      <a href="/2021/02/15/EDSR-code-reading/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Linux Basic Commands</span>
+                        <span class="hidden-mobile">EDSR code reading</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -280,8 +320,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/02/02/Useful-Python/">
-                        <span class="hidden-mobile">Useful Python</span>
+                      <a href="/2021/02/04/Linux-Basic-Commands/">
+                        <span class="hidden-mobile">Linux Basic Commands</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
