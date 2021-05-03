@@ -13,6 +13,8 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="">
   <meta name="author" content="John Doe">
@@ -237,53 +239,61 @@
             <div class="markdown-body">
               <h1 id="Vimtutor总结"><a href="#Vimtutor总结" class="headerlink" title="Vimtutor总结"></a>Vimtutor总结</h1><h2 id="Lesson-1-瞎转悠"><a href="#Lesson-1-瞎转悠" class="headerlink" title="Lesson 1 瞎转悠"></a>Lesson 1 瞎转悠</h2><p>假设现在你已经在Vim编辑器下了，但现在不知所措，尝试性地想按键盘去打字，诶发现做不到，每个字母竟然打不出来！偶尔光标上移一下，不知道按了啥键屏幕下边出现了一个“INSERT”，神奇地可以开始编辑了！但又不知道怎么移动光标了，但别郁闷，不管现在处于什么模式，你先按下“ESC”键，回归到初始的“Normal mode”，就好像打羽毛球、乒乓球都强调接球后要回到中场一样的意思。</p>
 <p>那么在Vim模式下怎么上下左右移动curser光标呢？现在给出对应：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">按键</th>
-<th align="center">意义</th>
+<th style="text-align:center">按键</th>
+<th style="text-align:center">意义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">k（small case，下同）</td>
-<td align="center">光标上移</td>
+<tbody>
+<tr>
+<td style="text-align:center">k（small case，下同）</td>
+<td style="text-align:center">光标上移</td>
 </tr>
 <tr>
-<td align="center">j</td>
-<td align="center">光标下移</td>
+<td style="text-align:center">j</td>
+<td style="text-align:center">光标下移</td>
 </tr>
 <tr>
-<td align="center">h</td>
-<td align="center">光标左移</td>
+<td style="text-align:center">h</td>
+<td style="text-align:center">光标左移</td>
 </tr>
 <tr>
-<td align="center">l</td>
-<td align="center">光标右移</td>
+<td style="text-align:center">l</td>
+<td style="text-align:center">光标右移</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>需要注意的是在Vim中大小写的差异可大了，同学们需要时刻注意大小写的问题！不然会出现很多问题呢。</p>
 <p>兴奋地在当前的文本中徜徉后很快就感到厌烦，why？因为移动得实在是太慢了！！！别怕，我来告诉你一些超级简单的命令，你会爱上这种精准而优雅的移动的：</p>
 <p>在修改代码的时候，我们经常会精确移动多少个词（space seperated），于是有以下命令：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">连续按键</th>
-<th align="center">意义</th>
+<th style="text-align:center">连续按键</th>
+<th style="text-align:center">意义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">自然数(n)+e</td>
-<td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词末尾</td>
+<tbody>
+<tr>
+<td style="text-align:center">自然数(n)+e</td>
+<td style="text-align:center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词末尾</td>
 </tr>
 <tr>
-<td align="center">自然数+w</td>
-<td align="center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
+<td style="text-align:center">自然数+w</td>
+<td style="text-align:center">向后跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
 </tr>
 <tr>
-<td align="center">自然数+b</td>
-<td align="center">向前跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
+<td style="text-align:center">自然数+b</td>
+<td style="text-align:center">向前跳过n个单词(从光标所在单词开始计数)，光标移动到单词开头</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>现在你可以开心地跳过很多单词了！然后如果你需要</p>
 
             </div>
@@ -336,32 +346,6 @@
               <article class="comments" id="comments">
                 
                 
-  <script type="text/javascript">
-    Fluid.utils.waitElementVisible('comments', function() {
-      var light = 'github-light';
-      var dark = 'github-dark';
-      var schema = document.documentElement.getAttribute('data-user-color-scheme');
-      if (schema === 'dark') {
-        schema = dark;
-      } else {
-        schema = light;
-      }
-      window.UtterancesThemeLight = light;
-      window.UtterancesThemeDark = dark;
-      var s = document.createElement('script');
-      s.setAttribute('src', 'https://utteranc.es/client.js');
-      s.setAttribute('repo', 'https://github.com/xuboshen/xuboshen.github.io');
-      s.setAttribute('issue-term', 'pathname');
-      
-      s.setAttribute('label', 'utterances');
-      
-      s.setAttribute('theme', schema);
-      s.setAttribute('crossorigin', 'anonymous');
-      document.getElementById('comments').appendChild(s);
-    })
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
 
               </article>
             

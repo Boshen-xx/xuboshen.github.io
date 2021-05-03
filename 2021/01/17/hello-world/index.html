@@ -13,6 +13,8 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="">
   <meta name="author" content="John Doe">
@@ -184,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      158 字
+      167 字
     </span>
   
 
@@ -246,7 +248,8 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h3 id="Set-abstract"><a href="#Set-abstract" class="headerlink" title="Set abstract"></a>Set abstract</h3><p><code>正文的一部分作为摘要&lt;!-- more --&gt;余下的正文</code></p>
-<h3 id="Add-footnotes"><a href="#Add-footnotes" class="headerlink" title="Add footnotes"></a>Add footnotes</h3><p><code>This is a sentence&lt;sup id=&quot;fnref:1&quot; class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--rounded&quot; aria-label=&quot;This is the corresponding footnote.</code><br>“&gt;[1]</span></a></sup>         <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the corresponding footnote.```<br><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section></p>
+<h3 id="Add-footnotes"><a href="#Add-footnotes" class="headerlink" title="Add footnotes"></a>Add footnotes</h3><p><code>This is a sentence&lt;sup id=&quot;fnref:1&quot; class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--rounded&quot; aria-label=&quot;This is the corresponding footnote.</code><br>“&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;         <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the corresponding footnote.```
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section></p>
 
             </div>
             <hr>
@@ -290,32 +293,6 @@
               <article class="comments" id="comments">
                 
                 
-  <script type="text/javascript">
-    Fluid.utils.waitElementVisible('comments', function() {
-      var light = 'github-light';
-      var dark = 'github-dark';
-      var schema = document.documentElement.getAttribute('data-user-color-scheme');
-      if (schema === 'dark') {
-        schema = dark;
-      } else {
-        schema = light;
-      }
-      window.UtterancesThemeLight = light;
-      window.UtterancesThemeDark = dark;
-      var s = document.createElement('script');
-      s.setAttribute('src', 'https://utteranc.es/client.js');
-      s.setAttribute('repo', 'https://github.com/xuboshen/xuboshen.github.io');
-      s.setAttribute('issue-term', 'pathname');
-      
-      s.setAttribute('label', 'utterances');
-      
-      s.setAttribute('theme', schema);
-      s.setAttribute('crossorigin', 'anonymous');
-      document.getElementById('comments').appendChild(s);
-    })
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
 
               </article>
             
