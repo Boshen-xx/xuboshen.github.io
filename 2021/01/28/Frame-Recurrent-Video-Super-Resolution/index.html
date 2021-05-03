@@ -241,25 +241,22 @@
 <a id="more"></a>
 <h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>作者提出了一种端到端的训练框架FRVSR，它使用前一个生成的HR估计帧加上当前的LR输入帧去估计下一帧的输出，有助于促进输出结果的时间连贯性，同时也减少了计算量。优点在于每帧都只被处理一次，并且采用循环框架，可以在更大时间范围内传播信息且不增加计算量。文章也进行了大量的实验，实验细节比较详尽，分析了不同网络设计的性能。</p>
 <h2 id="Problem-Statement-and-Research-Objective"><a href="#Problem-Statement-and-Research-Objective" class="headerlink" title="Problem Statement and Research Objective"></a>Problem Statement and Research Objective</h2><p>The latest sota video super-resolution methods approach the problem by combining a batch of LR frames to estimate a single HR frame, but existing methods can’t reach a pleasing flickering artifacts to produce temporally consistent frames. To address the issues the authors exploit the temporal relationships in the input and improve reconstruction for video super-resolution by frame-recurrent framework.</p>
-<h2 id="Method-s"><a href="#Method-s" class="headerlink" title="Method(s)"></a>Method(s)</h2><h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>The author relates <script type="math/tex">I^{LR}_{t-1}</script> and $I<em>{t}^{LR}$ with optical flow network $FNet$, the output $F</em>{t}^{LR}$ going through upsampling module to HR space $F<em>{t}^{HR}$. Then $F</em>{t}^{HR}$ is used to warp the $I<em>{t-1}^{est}$, and the warped outputs are transformed by space-to-depth transformation to LR space, namely $S</em>{s}(I<em>{t-1}^{est})$. Finally, using the concatenation of $I</em>{t}^{LR}$ and $S<em>{s}(I</em>{t-1}^{est})$ as input to feed the SRNet, reaching our objective $I_{t}^{est}$.</p>
-<p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/FRVSR.png" srcset="/img/loading.gif" alt="FRVSR"></p>
-<p>The final estimate $I<em>t^{est}$ of the framework is the output of the super-resolution network SRNet: $SRNet(I_t^{LR}\oplus S_s(WP(I</em>{t-1}^{est}\oplus UP(FNet(I_{t-1}^{LR}\oplus I_t^{LR})))))$.</p>
-<h4 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h4><p>$\mathcal{L}_{sr} = ||I_t^{est} - I_t^{HR} ||_2^2$</p>
-<p>$\mathcal{L}<em>{flow} = ||WP(I</em>{t - 1}^{LR}, F^{LR}) - I_t^{HR} ||_2^2$</p>
-<p>由于没有实际的光流数据集，所以增加了一个辅助的loss帮助FNet生成更真实的光流。</p>
-<p>$\mathcal{L} = \mathcal{L}<em>{flow} + \mathcal{L}</em>{sr}$</p>
-<h4 id="FNet"><a href="#FNet" class="headerlink" title="FNet"></a>FNet</h4><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/FNet.png" srcset="/img/loading.gif" alt="FNet"></p>
-<h4 id="SRNet"><a href="#SRNet" class="headerlink" title="SRNet"></a>SRNet</h4><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/SRNet.png" srcset="/img/loading.gif" alt="SRNet"></p>
+<h2 id="Method-s"><a href="#Method-s" class="headerlink" title="Method(s)"></a>Method(s)</h2><h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>The author relates <script type="math/tex">I^{LR}_{t-1}</script> and <script type="math/tex">I_{t}^{LR}</script> with optical flow network $FNet$, the output <script type="math/tex">F_{t}^{LR}</script> going through upsampling module to HR space <script type="math/tex">F_{t}^{HR}</script>. Then <script type="math/tex">F_{t}^{HR}</script> is used to warp the <script type="math/tex">I_{t-1}^{est}</script>, and the warped outputs are transformed by space-to-depth transformation to LR space, namely <script type="math/tex">S_{s}(I_{t-1}^{est})</script>. Finally, using the concatenation of <script type="math/tex">I_{t}^{LR}</script> and <script type="math/tex">S_{s}(I_{t-1}^{est})</script> as input to feed the SRNet, reaching our objective <script type="math/tex">I_{t}^{est}</script>.</p>
+<p><img src="/img/FRVSR.png" srcset="/img/loading.gif" alt="FRVSR"></p>
+<p>The final estimate <script type="math/tex">I_t^{est}</script> of the framework is the output of the super-resolution network SRNet: <script type="math/tex">SRNet(I_t^{LR}\oplus S_s(WP(I_{t-1}^{est}\oplus UP(FNet(I_{t-1}^{LR}\oplus I_t^{LR})))))</script>.</p>
+<h4 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h4><script type="math/tex; mode=display">\mathcal{L}_{sr} = ||I_t^{est} - I_t^{HR} ||_2^2</script><script type="math/tex; mode=display">\mathcal{L}_{flow} = ||WP(I_{t - 1}^{LR}, F^{LR}) - I_t^{HR} ||_2^2</script><p>由于没有实际的光流数据集，所以增加了一个辅助的loss帮助FNet生成更真实的光流。</p>
+<script type="math/tex; mode=display">\mathcal{L} = \mathcal{L}_{flow} + \mathcal{L}_{sr}</script><h4 id="FNet"><a href="#FNet" class="headerlink" title="FNet"></a>FNet</h4><p><img src="/img/FNet.png" srcset="/img/loading.gif" alt="FNet"></p>
+<h4 id="SRNet"><a href="#SRNet" class="headerlink" title="SRNet"></a>SRNet</h4><p><img src="/img/SRNet.png" srcset="/img/loading.gif" alt="SRNet"></p>
 <h4 id="Notations"><a href="#Notations" class="headerlink" title="Notations"></a>Notations</h4><ul>
-<li>$\oplus$ denotes the concatenation of images in the channel dimension.</li>
+<li><script type="math/tex">\oplus</script> denotes the concatenation of images in the channel dimension.</li>
 <li>All convolutions in both networks uses 3×3 kernels with stride 1, except for the transposed convolutions in SRNet which use stride 2 for spatial <u>upsampling</u>. </li>
 <li>The leaky ReLU units in FNet use a leakage factor of 0.2.</li>
 <li>The notation 2× indicates that the corresponding block is duplicated. </li>
 </ul>
 <h4 id="Transposed-convolution"><a href="#Transposed-convolution" class="headerlink" title="Transposed convolution"></a>Transposed convolution</h4><p>Transposed convolution is one of upsampling methods(pixel shuffle can reduce the computational cost). It’s a special kind of convolution with zero paddings to expand the size of input image, then revolve the kernel and convolve again.</p>
 <p>Tutorial: ://zhuanlan.zhihu.com/p/48501100</p>
-<h4 id="Space-to-depth"><a href="#Space-to-depth" class="headerlink" title="Space-to-depth"></a>Space-to-depth</h4><p> $S_s:[0, 1]^{sH\times sW\times C}\rightarrow [0, 1]^{H\times W\times s^2C}$, mapping to LR space.</p>
-<p>The operator can be formally described as $S<em>s (I)</em>{i,j,k} = I_{si+k\% s, sj + (k/s)\%s, k/s^2}$, with zero-based indexing, modulus % and integer division /.</p>
+<h4 id="Space-to-depth"><a href="#Space-to-depth" class="headerlink" title="Space-to-depth"></a>Space-to-depth</h4><p> <script type="math/tex">S_s:[0, 1]^{sH\times sW\times C}\rightarrow [0, 1]^{H\times W\times s^2C}</script>, mapping to LR space.</p>
+<p>The operator can be formally described as <script type="math/tex">S_s (I)_{i,j,k} = I_{si+k\% s, sj + (k/s)\%s, k/s^2}</script>, with zero-based indexing, modulus % and integer division /.</p>
 <p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/space_to_depth.png" srcset="/img/loading.gif" alt="space_to_depth"></p>
 <p>PyTorch的实现</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">space_to_depth</span>(<span class="hljs-params">x, block_size</span>):</span><br>    n, c, h, w = x.size() <span class="hljs-comment"># 输入x只能为4维tensor的batch形式，否则warning</span><br>    unfolded_x = torch.nn.functional.unfold(x, block_size, stride=block_size)<br>    <span class="hljs-keyword">return</span> unfolded_x.view(n, c * block_size ** <span class="hljs-number">2</span>, h // block_size, w // block_size)<br></code></pre></td></tr></table></figure>
@@ -276,7 +273,7 @@
 </ul>
 <h2 id="Evaluation-and-justifications"><a href="#Evaluation-and-justifications" class="headerlink" title="Evaluation and justifications"></a>Evaluation and justifications</h2><ul>
 <li>所有大的计算量都在LR space完成。All computationally intensive operations should be performed in LR space, which significantly reduce the computational cost</li>
-<li>利用$F^{HR}$去Warp$I_{t-1}^{est}$。Having direct access to the previous output can help the network to produce a temporally consistent estimate for the following frame, thus warping the previous HR estimate and feed it to the super-resolution network.</li>
+<li>利用<script type="math/tex">F^{HR}</script>去Warp<script type="math/tex">I_{t-1}^{est}</script>。Having direct access to the previous output can help the network to produce a temporally consistent estimate for the following frame, thus warping the previous HR estimate and feed it to the super-resolution network.</li>
 </ul>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><ul>
 <li>超越了sliding window的所有方法The FRVSR works more efficient than existing sliding window approaches. </li>
@@ -319,9 +316,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/02/Useful-Python/">
+                      <a href="/2021/02/15/Vimtutor/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Useful Python</span>
+                        <span class="hidden-mobile">Vimtutor</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -329,8 +326,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/01/27/anaconda-useful-commands/">
-                        <span class="hidden-mobile">anaconda useful commands</span>
+                      <a href="/2020/07/30/passage7/">
+                        <span class="hidden-mobile">passage7</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

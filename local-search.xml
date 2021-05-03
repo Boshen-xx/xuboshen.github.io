@@ -4,19 +4,131 @@
   
   
   <entry>
-    <title>EDSR code reading</title>
-    <link href="/2021/02/15/EDSR-code-reading/"/>
-    <url>/2021/02/15/EDSR-code-reading/</url>
+    <title>passage13</title>
+    <link href="/2021/05/03/passage13/"/>
+    <url>/2021/05/03/passage13/</url>
     
-    <content type="html"><![CDATA[<p><a href="https://github.com/xinntao/EDVR/tree/master/basicsr/models">https://github.com/xinntao/EDVR/tree/master/basicsr/models</a></p><h1 id="1-Python基础库"><a href="#1-Python基础库" class="headerlink" title="1.Python基础库"></a>1.Python基础库</h1><h2 id="1-1-logging"><a href="#1-1-logging" class="headerlink" title="1.1 logging"></a>1.1 logging</h2><p><a href="https://cloud.tencent.com/developer/article/1354396">https://cloud.tencent.com/developer/article/1354396</a></p><ul><li>功能：用作记录项目运行中的信息记录</li></ul><h2 id="1-2-os"><a href="#1-2-os" class="headerlink" title="1.2 os"></a>1.2 os</h2><p><a href="https://www.runoob.com/python/os-file-methods.html">https://www.runoob.com/python/os-file-methods.html</a></p><ul><li>功能：提供丰富的方法用来处理文件和目录</li></ul><h2 id="1-3-collections"><a href="#1-3-collections" class="headerlink" title="1.3 collections"></a>1.3 collections</h2><p><a href="https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456">https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456</a></p><ul><li>功能：提供很多集合类<ul><li>nametuple：用来创建自定义tuple并规定tuple元素的个数</li><li>deque：双向链表。有append、appendleft、pop、popleft等方法。</li><li>defaultdict：使用dict时，如果引用的key不存在，就会抛出keyerror。如果希望key不存在时返回一个默认值就可以用这个。</li><li>OrderedDict：可以实现一个FIFO的dict，当容器超出显示时，先删除最早添加的key</li></ul></li></ul><h2 id="1-4-copy"><a href="#1-4-copy" class="headerlink" title="1.4 copy"></a>1.4 copy</h2><ul><li>功能：提供通用的浅层和深层copy操作<ul><li>浅拷贝<code>copy.copy(x)</code>：复制父对象，子对象使用引用的方式。</li><li>深拷贝<code>copy.deepcopy(x)</code>：复制对象和对象的所有子对象。</li></ul></li></ul><h2 id="1-5-python面向对象"><a href="#1-5-python面向对象" class="headerlink" title="1.5 python面向对象"></a>1.5 python面向对象</h2><ul><li>子类需要自动调用父类的方法：子类不重写init方法</li><li>子类不需要自动调用父类方法：重写init方法</li><li>子类重写init方法又需要调用父类的方法：用super关键字：<code>super(子类, self).__init__(arguments)</code></li></ul><h1 id="2-第三方库"><a href="#2-第三方库" class="headerlink" title="2. 第三方库"></a>2. 第三方库</h1><h2 id="2-1-torch"><a href="#2-1-torch" class="headerlink" title="2.1 torch"></a>2.1 torch</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="路人甲不是小丑"><a href="#路人甲不是小丑" class="headerlink" title="路人甲不是小丑"></a>路人甲不是小丑</h1><p>进入大学之后，我的心态渐渐发生着变化，从一意孤行到互助共享，难道是我变得更加善良了吗？难道是我良心发现了吗？我猜我只是向自己妥协了，向那个丧气的自己妥协，向那个已经很难前进的自己低头，又或许只是和那些中二的执念握手言和。孤独的我只能也只会是一个小丑，于是我转头变成了幕后推动别人前进的人，变成一位辅助，一边笑着一边push更加努力的别人前进，我只用呆在原地就好了。<br>不管是友情也好爱情也罢，或许我都只适合做一个好的supporter，一个半路上碰见的摆渡人，一个转身就不见的路人甲，一个终将成为记忆里灰色的模糊影子，也许一切都会错过，想要好结果的我始终只适合吃苦果，我只能帮助一个又一个人，然后自己只留在原地颤抖吗。<br>即使是这样的我，也很想有人爱我，在这个大到让我难过的世界也可以有一些小小的幸福啊。</p>]]></content>
     
     
     
     <tags>
       
-      <tag>python</tag>
+      <tag>文章迁移</tag>
       
-      <tag>EDSR</tag>
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage12</title>
+    <link href="/2021/05/03/passage12/"/>
+    <url>/2021/05/03/passage12/</url>
+    
+    <content type="html"><![CDATA[<h1 id="奇妙的一天"><a href="#奇妙的一天" class="headerlink" title="奇妙的一天"></a>奇妙的一天</h1><p>今日：<br>三点 迷迷糊糊地睡着<br>直到时针和分针一并竖直时 我醒来<br>饱腹感很强 索性不进食去开会<br>直到六点 吃了一点饭<br>临时收到通知 做了一个半小时的心理辅导员<br>十一点钟，吃了晚饭<br>到了现在</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage11</title>
+    <link href="/2021/05/03/passage11/"/>
+    <url>/2021/05/03/passage11/</url>
+    
+    <content type="html"><![CDATA[<h1 id="近来"><a href="#近来" class="headerlink" title="近来"></a>近来</h1><p><strong>2020年12月5日 21:17</strong></p><p>近来是低潮期<br>从八月还是九月亦或是更早的时候，就陷入低潮<br>其实一切都是顺其自然，一切都在向心灵的低处走去</p><p>我该表达自己吗 还是沉默不语<br>我该寻求改变吗 还是平淡如初<br>我该冷眼旁观吗 还是涌入狂潮</p><p>逃离<br>我想逃离啊<br>但这是冲动吗，这只是冲动吗，这不是冲动吗<br>可到头来，逃离是为了奔赴，我想逃离哪里，又希望奔向哪里<br>想清楚了么</p><p>有人希望靠近我 向我走一步 对我伸出手<br>可我在不断后退  接力棒永远在我这沉重地落地<br>也许是出于自大<br>可我总觉得希望的火种总是在我的手里熄灭</p><p>Notification：<br>我 一个<br>毫无教养<br>人品极差<br>性格恶劣<br>没有任何值得拿出手的成就<br>天天躺尸<br>脑袋里装的全是肮脏污垢<br>的垃圾和废物，或者随便什么浪费社会资源的东西，为了多数人好是应该被淘汰掉的渣滓。</p><p>我只想知道<br>什么才是不破不灭的真理啊</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage10</title>
+    <link href="/2021/05/03/passage10/"/>
+    <url>/2021/05/03/passage10/</url>
+    
+    <content type="html"><![CDATA[<h1 id="且行且浅吟"><a href="#且行且浅吟" class="headerlink" title="且行且浅吟"></a>且行且浅吟</h1><p><strong>2020年10月20日 22:08</strong></p><p>———————————————————似水流年的岁月啊，你让我怎样一个人度过。————————————————————</p><p>在有人问我为什么不找女朋友的时候，我说没人看得上我，我也不太想找，当下应以学习为重，但其实不是这样的，我也想有一个人和我挽着手，并肩走过有桂花飘香的大学岁月。<br>爱情多美好，它似蜂蜜一般香甜，似激流般澎湃，在二十来岁的时候正有人生中最不顾一切的一腔热血，不论思春期的少年都向往一份羡煞旁人的神仙爱情，佳人为才子回眸一笑，惹群芳暗淡，才子送佳人情诗一首，脉脉情意溢于字里行间。</p><p>我渴望怎样的爱情，我首先希望我们是两个独立的人，有能力独自一人走过一段段岁月，可以像两个旅人一样分开，然后走到一起，分开时想念，相遇时只是看到彼此就感到由衷地感到幸福和欢喜，向彼此慢慢诉说这段日子的经历；我期望我们在情侣之前，首先是能够静下来交流彼此心事的知己，所谓“神交”，爱情的甜蜜是短暂的，激情迟早消退，但知己之交同君子之交，淡如水，但细水能长流，有足够的耐心的韧性可抵岁月长绵，因为能够正确诉说自己的想法，所以许多世俗上复杂的事情会变得简单，在沟通和包容之下，一切都变得从容和淡然，只要彼此给出了真心，那么这份羁绊就无比坚定；我还期望我们能共同努力，“士别三日，当刮目相看”，不断学习，为生活引入新的乐趣和新的期待，我们都拥有终身学习的勇气和能力，所以我们能持之以恒地改变自己，彼此生活的齿轮也许在一开始不会咬合，但最后我们的齿轮将依偎着，大轮稍慢一些缓缓地转，小轮能不紧不慢地跟着大轮，水乳交融地转动着时间的齿轮，在彼此灵魂中留下烙印，不必多言，我们已经成为彼此眼里独一无二的那个人，我们两人的人生将融合为一个，我们的灵魂手牵着手，在这里看尽花开花落，走遍人世间的苦难和美好。</p><p>从理想上，那是我能想象中最完美的爱情，但是生活拍了拍我并不宽阔的肩膀，仿佛在说你还太嫩了，我看了看自己，路灯下小小的身影显得那么单薄，尚且没有能力承担起任何责任，承诺不了任何未来。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage9</title>
+    <link href="/2021/05/03/passage9/"/>
+    <url>/2021/05/03/passage9/</url>
+    
+    <content type="html"><![CDATA[<h1 id="走失于这人间"><a href="#走失于这人间" class="headerlink" title="走失于这人间"></a>走失于这人间</h1><p>假如我给自己画一幅画，我愿以鲜红的背景作为我的底色。<br>然而事实上我却是黑白灰的，毫无生机的，始终模糊在脑海中的那些颜色。永远满怀期待，永远又心如死灰，它们极其矛盾地存在于我的心坎，我常常为之而苦痛。</p><p>我始终觉得要谦逊，要海纳百川，要温润如玉，然而我的内心躁动着那个偏激而疯狂的声音，它告诉我我要傲慢，要高高在上，要对每个人都心怀警惕，不要相信任何人，更不要相信你以为对你好的人，他们是为名利而来的人，一旦滑倒，拥挤在你身边的人群就轰然而散。</p><p>最近牙齿有些敏感，喝一口冷水都疼到神经里去，只有温水刚刚好，能不让那口牙疼痛。我也好像随之也变得敏感起来，最近身边的一些事情让我对人和事产生了极大的怀疑，我没有说，也不敢说，总之在我用尽全力想清楚之前，我预感我会一直处于低谷期，不知道心中的这个结会不会在节骨眼上作祟。我在害怕，我也在迷茫。</p><p>其实我整个人都是负能量的集合体，任何时候都想着“现在已经够糟糕了，再糟糕一些也无所谓的吧，就这样凑活着过了吧，啊，明天还有早自习，真烦啊，不过一想到下周还有周末可以多睡会，还是坚持一下吧。”，如果身边的人知道我这么想，他们会说什么呢，“你成绩已经这么好了，你还有什么可烦的呢。”，成绩？难道真有人以为幸福是由成绩决定的吗？说起来，有的人已经多大了呢，还在为考试成绩而攀比而对每个人指手画脚，对每个人分层分级吗？怎么听起来这么可笑呢？你拿到了成绩，然后呢？然后呢？然后你除了空虚的获得感之外，你得到什么了呢？你为获得新知识而兴奋了吗？还是看着那张成绩单傻笑呢？这样的话不如去永远当一个学生好了，而且永远当一个应试教育的学生好了。</p><p>我看不起那些因为成绩好就乜斜着眼睛看人的人，什么？你说我也是？哦不，你可错了，我要是成绩差一些，我谁都不会搭理，反而看上去会更加高傲呢，因为可以有充分的理由沉浸在自己的世界里了，我对那些真正热爱学习的人敬畏而远之，我怕我的存在会玷污他们纯洁的思考能力；我对那些为了梦想拼尽全力的人敬佩而远之，我怕我偶尔的叨扰会打消他们的激情；我对那些沉迷游戏的人敬而远之，因为我们没有共同话题，道不同不相为谋罢了。所以，我的舒适区就是孤零零一个人，不用担心任何，任何与人之间产生的关系会造成怎样的结果，我很害怕，我很害怕会对别人的人生造成任何影响，我怎能承担起这份责任呢，这可是对一个 人 的影响啊。</p><p>我看人的方式很朴素的，只要是我认为善良的人，我都乐于与他们交谈，然而一旦这份善良沾染了别的污垢，我便觉得恶心。</p><p>还有啊，我想说，我想你，但不一定会找你，真的，真的，因为怕打扰到你的生活，我通常缺少闯入别人生活的勇气，活到现在了，我其实不至于没有朋友，但是那种能让我能够毫无心理压力去叨扰的朋友，屈指可数（也许很多人也都是这样），同时我也不知道我应该做一个怎样的朋友，是损友？是诤友？还是良师益友呢，我定位不明。</p><p>我可太看不清我自己了，或许太看清我自己了，让我已经走失在这片海洋中了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage8</title>
+    <link href="/2021/05/03/passage8/"/>
+    <url>/2021/05/03/passage8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="苟富贵，忘了我"><a href="#苟富贵，忘了我" class="headerlink" title="苟富贵，忘了我"></a>苟富贵，忘了我</h1><p><strong>2020年9月6日 01:53</strong></p><p>陈涉吴广起义前，陈涉怅恨久之，说：苟富贵，勿相忘。然而为何要勿相忘呢？<br>庄子说：相濡以沫，不如相忘于江湖。对于任何人来说，我都是他生命中的路人罢了，不过是繁星中的一点，无光无亮，任何人都不必纠结于我，我也不能要求任何人纠结于我，不如于江、湖之中，你追求你的自由，不必管我。<br>徐志摩说，轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一片云彩。在烟花绽放灿烂的时候，我悄悄地走掉，正如我来时那般静默。<br>所以我在此刻对所有我身边的人与曾经和我有过交集的人说：苟富贵，还是忘了我罢。记得我作甚呢？给我益处？图回报？都不必了，你记得也好，下次见面时，我仍然会开心地打招呼，珍惜并铭记这一期一会之情；最好你忘掉。<br>还是那句话，听起来还蛮卑微的：<br>对任何人而言，我不过是命运使然的路人甲。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage6</title>
+    <link href="/2021/05/03/passage6/"/>
+    <url>/2021/05/03/passage6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="二次元那些事儿"><a href="#二次元那些事儿" class="headerlink" title="二次元那些事儿"></a>二次元那些事儿</h1><h2 id="我印象中过去的二次元"><a href="#我印象中过去的二次元" class="headerlink" title="我印象中过去的二次元"></a>我印象中过去的二次元</h2><p>    说起二次元—我其实并不想用这个词语，但找不到更加合适的替代，暂且用二次元指代好了，其实它或多或少成为了现在一个说大不大说小不小的文化圈了，作为广大青少年、美少女们的精神寄托之一，二次元文化逐渐从最开始小众的死宅中走出来，成为了当代最具代表性的亚文化之一，它囊括了cosplay圈、gal宅、动漫画宅、V家圈、阳炎project等等，也是曾经中国的B站，日本的niconico动画最早的组成成分，虽然现在B站的大战略是拓展业务，已经不再适合我们圈地自萌了，但是我仍然印象深刻的是，2014年上B站的时候看着当时的新番目隐都市的演绎者，画面干净纯洁，新番表还是大图配动画名的滑动式介绍，没有过多‘生活区’、‘宅舞区’等视频，首页也还没那么五花八门。不过由于我也不觉得这是个坏事，网站也好人也好在思想纲领和内容呈现上都不能止步不前，否则迟早被淘汰掉，现在的B站也挺好的。<br>    二次元和B站肯定是不可分割的部分，日本动画的引入除了上世纪的一休、中华小当家，蜡笔小新之类的，步入21世纪后早期的AcFun、Bilibili开始以网站的形式搬运日本动画，这些弹幕网站的用户，也就自然而然地被认为是二次元了。<br>    我正式入坑开始喜欢上日本动画的制作、剧情和内容的时候，是初中看未闻花名的时候，结尾面码我找到你了配上一首secret base把爷感动得心里泪如雨下，从此一发不可收地迈入二次元中，<del>成为pxj</del>成为一名B站用户。</p><h2 id="二次元分类图鉴"><a href="#二次元分类图鉴" class="headerlink" title="二次元分类图鉴"></a>二次元分类图鉴</h2><pre><code class="lang-每一个二次元的心中都住着一个泛式。---题记```">    但是本文并不是为了科普二次元咋来的和B站历史，日常偏题之后，我想聊聊现在B站混迹动画区的三种最具代表性的用户：**“以看动画为兴趣的正常人”**、**“沉浸动画中的二次元”**和**“深陷二次元中的死宅”**。    首先是**以看动画为兴趣的正常人**，其实也是我身边最常见的一类人。他们生活中乐观向上，积极参与各种各样的社交活动，广泛涉猎各种兴趣爱好，不论遇到什么样的人，只要试探到对方的兴趣点，马上就能在这方面引起话题，进而与对方谈笑风生。这样的人我称其为“成功”，二次元通常是对其又爱又恨的，因为“成功”们涉猎的动画通常为:进击的巨人、海贼王、火影忍者、一拳超人......这样出圈现象极其广泛的动画，二次元们通常只能一边在和他们痛心疾首~~趾高气昂~~地讨论着富坚老贼又跳票了，另一边看不起~~羡慕~~着“成功”们的世俗生活。“成功”们也多半想着：“原来‘二次元’~~底层民众~~都在看这样的动画片啊，真好啊真好啊~~一不务正业的社会垃圾~~。”面对二次元们们，“成功”们的心态也大多是从高往低兼容式的，就像父母看小孩子一般关爱~~智障~~儿童的眼神，两边都互相看不起对方却又不会在明面上说出来，不过通常两方也都井水不犯河水，生活几乎毫无交集，并不会掀起世纪大战。    其次就是**沉浸于动画中的二次元们**了。这是B站为动画贡献播放量和弹幕的主要用户，入宅时间有长有短，入宅时间短的同学，大抵处于“二次元拯救现实垮塌”的阶段：在女性角色方面，不论是逢坂大河的傲娇萝莉，霞之丘诗羽学姐这样的御姐，还是戈薇这样正直、勇敢、善良的少女，都能够戳中自己的萌点，与现实里傻傻分不清楚的绿茶和女人心比起来，动画显然要单纯得多，女主的一举一动也暴露在眼下能够让观众心满意足地在弹幕上叫着我老婆；在剧情塑造方面，不断治愈着妖怪和人心的夏目友人帐，能够唤回我们内心美好的一些动画......它最大的特点，就是用青少年喜闻乐见的方式展示了我们最想看到的一些品质、最想经历的事情、最渴望追求的精神，而这些在现实里往往可望而不可即，所以二次元自然而然地成为很多人逃离到的一块土地。    我自认为我属于这一类人，而我心中的理想型近乎于他--泛式，泛八爷。泛式，著名B站动画区up主，原Mad大神，现三大幻神之下动画区第一人，ntr教父，关于泛式其人我不过多介绍，这里是其萌娘百科[http://https://zh.moegirl.org/%E6%B3%9B%E5%BC%8F](http://https://zh.moegirl.org/%E6%B3%9B%E5%BC%8F)，有兴趣可以自己看。泛式生活的点滴都渗入了二次元的~~恶臭~~香味，并且以做up主为生，只消去其直播间听一会就能感受到，泛八爷对于动画是热爱的，并且这种热爱非死宅类的热爱，而是一个正常人对于兴趣爱好的那种热爱，是积极向上的并能给父母说出：“看动画是我的兴趣爱好”的热爱，而非玩物丧志的热爱，于我而言堪称我的理想型，是我所接受并向往的生活方式。白天工作，做好时间管理保证自己的休闲娱乐的时间去看动画，撩妹，然后继续投身紧张的工作中，一想到自己还有可以去看的新番，工作也兴致满满地去做，这大概就是将喜欢的事情作为兴趣爱好的幸福吧。    最后是第三类人，**死宅**，galgame会推完所有线剧情、周边漫展必然深度参与、手办成堆、看动画会直呼老婆、现实生活中可能暴躁可能究极自闭的死宅。有的人收藏手办，我称其为有钱人的娱乐消遣；有的人偶尔玩玩galgame，我称其为缓解女朋友的重压；有的人逛漫展就图一乐；有的人只在弹幕上跟风刷老婆，实际上没有贡献消费事后也就忘了，但死宅不一样，死宅们的精神和灵魂都在二次元中去了，与那些自称死宅的人不同，死宅的前半生，都献给了二次元，区分死宅与喜欢动画的正常人的关键特征在于是否走火入魔，就好像区分网瘾少年和爱打游戏的正常人一样。## 二次元们的属性金字塔```二次元金字塔顶端住着泛式。---题记</code></pre><p>    世界上最远的距离不是现充和穷蛋的金钱差距，而是二次元与非二次元的差距。<br>    首先来说最纯正的二次元血液是什么样的：<strong>社交自闭属性+中二属性</strong>，最经典的画面不过：“他冷眼看着他们，心中冷哼：‘愚蠢的人类，强者都是孤独的’，此时环境吹来一阵又一阵冷风，衬托出他脸上写出大大的寂寞。”<br>    由于一些经典版二次元在成长过程中逐渐意识到自己的局限性和愚蠢之处，开始感到羞耻和尴尬，于是进化到基础版二次元：<strong>社交内向属性+二次元属性</strong>。其中内向属性逃离了自闭的范畴，能够在被动的情况下正常交流，而不至于阿巴阿巴阿巴；二次元属性作为中二年级的升级，在内心一个层面上仍然寄托于二次元世界，但是另一方面能够以现实和客观的视角看身边的事情并做出合适的反应。<br>    基础版二次元仍然是被动的，无法主动出击，难以对二次元世界进行割舍或做出贡献，于是高级二次元产生了：<strong>具有一定消费力+有社交能力+二次元属性</strong>，这些二次元是推动产业发展的中坚战斗力，土豪富二代一般位列其中，不乏后浪，B站up主包括瓶子、赫萝老师、Ajie、天堂都隶属其中。<br>    <strong>终极版本的二次元</strong>即泛八爷：对外是社交达人谈笑风生，<strong>对内是动漫高手大爱ntr+顶级消费力+能够接触日本动画圈核心大佬</strong>，是二次元顶礼膜拜的对象，是二次元中的龙皇异次元，出圈的顶尖战斗力，二次元中的顶级现充。<br>    上述即我暂时总结出的四阶级的二次元，不过区分条件首先得是二次元才行，二次元和非二次元的区别在口癖、行为模式上都有较大的差别，当他们谈有关二次元的话题时孰是二次元是立判的。<br>    最后，我正处于从基础版二次元到高级版二次元进阶的过程中，呐~你说是吧。</p><h2 id="我对二次元的寄托"><a href="#我对二次元的寄托" class="headerlink" title="我对二次元的寄托"></a>我对二次元的寄托</h2><p><code>自闭的学生，在二次元中寻求自我救赎，多少是能够理解的。---题记</code><br>    上文也说了，我是一个喜欢动画的二次元，做了五六年的动画宅，看了一百来部动画，轻入声优圈，老松冈爱衣催婚协会成员，nrnl忠实听众，B站音乐区常客，不看漫画(早年看，后来因为不适应竖着的文字所以就慢慢放弃了)，不看轻小说(翻译过于直球看得头大)，不混vtb圈(不戳我的点)，不参加漫展(漫展太尬了，尬度爆棚)，不购买手办(太贵了，爷老穷逼了)，单纯因为日本动画本身吸引了我，而且当时我渐渐戒了游戏，急需替代的娱乐方式，读的书对年幼的我而言又过于沉重(悲惨世界让我的内心产生了极大的同理心)，于是二次元恰好填补了我当时内心的缺失，成为了我新的寄托。<br>    后来渐渐长大了，看动画更多地变成了我的习惯，一种掺杂着少年意味的正义将我的内心填满，以一些鸡毛蒜皮的小事当作世间的邪恶，中二的孤高时长将我的情感被掩埋在题海里(或者跟一些人吹牛逼)，看动画的放松方式延续了下来，无数个周末的白天，书桌前都是我抱着枕头盯着ipad上的动画片播放的身影，绝大多数动画也都是这么看下来的，不意外的是几乎没怎么看废萌片，不过对于电视剧、综艺节目此类算是无感了。对女生而言这份乐趣可能来自韩剧，对愤青而言这份乐趣可能来自键政，对我而言就是动画，以上。</p><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>    未来会不会跟二次元说再见呢，我不知道，无法做出任何承诺和自我保证，但是此生中，这段日子一定会以星光闪烁的姿态点亮我人生的一片天空，守护着我的过去。或许当我意识到我需要承担某份不可丢弃的职责或爱上不知现在在何处的美少女的爱，我会将二次元变成茶余饭后，然后当作点心一般品尝吧。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
       
     </tags>
     
@@ -46,76 +158,11 @@
   
   
   <entry>
-    <title>Linux Basic Commands</title>
-    <link href="/2021/02/04/Linux-Basic-Commands/"/>
-    <url>/2021/02/04/Linux-Basic-Commands/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h1><p>修改文件权限：chmod</p><p>修改文件时间为当前，不存在则创建文件：touch</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Linux</tag>
-      
-      <tag>Shell</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>File IO</title>
-    <link href="/2021/02/02/File-IO/"/>
-    <url>/2021/02/02/File-IO/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Numpy-read-and-write"><a href="#Numpy-read-and-write" class="headerlink" title="Numpy read and write"></a>Numpy read and write</h1><h2 id="tofile-and-fromfile"><a href="#tofile-and-fromfile" class="headerlink" title="tofile() and fromfile()"></a>tofile() and fromfile()</h2><ul><li>tofile()将数组中的数据以二进制的格式写进文件</li><li>tofile()输出的数据不保存数组形状和元素类型等信息</li><li></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = np.arrange(<span class="hljs-number">0</span>, <span class="hljs-number">12</span>)<br>a.tofile(<span class="hljs-string">&quot;a.bin&quot;</span>)<br>b = np.fromfile(<span class="hljs-string">&quot;a.bin&quot;</span>, dtype = np.int32)<br></code></pre></td></tr></table></figure><h2 id="Reading-text-and-CSV-files"><a href="#Reading-text-and-CSV-files" class="headerlink" title="Reading text and CSV files"></a>Reading text and CSV files</h2><p>CSV： comma-separated values</p><h3 id="没有任何遗漏数据"><a href="#没有任何遗漏数据" class="headerlink" title="没有任何遗漏数据"></a>没有任何遗漏数据</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>python</tag>
-      
-      <tag>file io</tag>
-      
-      <tag>tutorial</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Useful Python</title>
-    <link href="/2021/02/02/Useful-Python/"/>
-    <url>/2021/02/02/Useful-Python/</url>
-    
-    <content type="html"><![CDATA[<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul><li><code>str.split(str = &#39; &#39;, num = num)</code>, 传入str字符串作为分割字符，把str分割成num+1个字符串，并返回一个list</li><li><code>hasattr(object, name = &#39;name&#39;)</code>，传入对象，用于判断object钟是否包含对象属性name，返回bool</li></ul><h1 id="MMCV"><a href="#MMCV" class="headerlink" title="MMCV"></a>MMCV</h1><h2 id="1-1自定义扩展开发I-O"><a href="#1-1自定义扩展开发I-O" class="headerlink" title="1.1自定义扩展开发I/O"></a>1.1自定义扩展开发I/O</h2><h3 id="1-1-1"><a href="#1-1-1" class="headerlink" title="1.1.1"></a>1.1.1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">@register_handle(<span class="hljs-params"><span class="hljs-string">&#x27;npy&#x27;</span></span>)</span><span class="hljs-comment">#装饰器，把实现的handler注册到mmcv钟，然后mmcv就可以直接找到该handler。</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NpyHandler</span>(<span class="hljs-params">BaseFileHandler</span>):</span><br>    <br>    <span class="hljs-comment"># np.save, np.load,  https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_from_fileobj</span>(<span class="hljs-params">self, file, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> np.load(file)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_fileobj</span>(<span class="hljs-params">self, obj, file, **kwargs</span>):</span><br>        np.save(file, obj)<br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dump_to_str</span>(<span class="hljs-params">self, obj, **kwargs</span>):</span><br>        <span class="hljs-keyword">return</span> obj.tobytes()<br></code></pre></td></tr></table></figure><p>对外读写接口：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#文件读取流程。</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load</span>(<span class="hljs-params">file, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function"><span class="hljs-title">return</span> <span class="hljs-title">obj</span></span><br><span class="hljs-function"></span><br><span class="hljs-function">#文件写流程</span><br><span class="hljs-function"><span class="hljs-title">def</span> <span class="hljs-title">dump</span>(<span class="hljs-params">obj, file = <span class="hljs-literal">None</span>, file_format = <span class="hljs-literal">None</span>, **kwargs</span>)</span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">import</span> <span class="hljs-title">mmcv</span></span><br>data = mmcv.load(&quot;test.json&quot;)<br>mmcv.dump(data, <span class="hljs-string">&quot;out.json&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>python</tag>
-      
-      <tag>tutorial</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Frame-Recurrent Video Super-Resolution(CVPR 2018)</title>
     <link href="/2021/01/28/Frame-Recurrent-Video-Super-Resolution/"/>
     <url>/2021/01/28/Frame-Recurrent-Video-Super-Resolution/</url>
     
-    <content type="html"><![CDATA[<p>In this paper, an end-to-end trainable frame-recurrent video super-resolution framework that uses the previously inferred HR estimate to super-resolve the subsequent frame is proposed.</p><a id="more"></a><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>作者提出了一种端到端的训练框架FRVSR，它使用前一个生成的HR估计帧加上当前的LR输入帧去估计下一帧的输出，有助于促进输出结果的时间连贯性，同时也减少了计算量。优点在于每帧都只被处理一次，并且采用循环框架，可以在更大时间范围内传播信息且不增加计算量。文章也进行了大量的实验，实验细节比较详尽，分析了不同网络设计的性能。</p><h2 id="Problem-Statement-and-Research-Objective"><a href="#Problem-Statement-and-Research-Objective" class="headerlink" title="Problem Statement and Research Objective"></a>Problem Statement and Research Objective</h2><p>The latest sota video super-resolution methods approach the problem by combining a batch of LR frames to estimate a single HR frame, but existing methods can’t reach a pleasing flickering artifacts to produce temporally consistent frames. To address the issues the authors exploit the temporal relationships in the input and improve reconstruction for video super-resolution by frame-recurrent framework.</p><h2 id="Method-s"><a href="#Method-s" class="headerlink" title="Method(s)"></a>Method(s)</h2><h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>The author relates <script type="math/tex">I^{LR}_{t-1}</script> and $I<em>{t}^{LR}$ with optical flow network $FNet$, the output $F</em>{t}^{LR}$ going through upsampling module to HR space $F<em>{t}^{HR}$. Then $F</em>{t}^{HR}$ is used to warp the $I<em>{t-1}^{est}$, and the warped outputs are transformed by space-to-depth transformation to LR space, namely $S</em>{s}(I<em>{t-1}^{est})$. Finally, using the concatenation of $I</em>{t}^{LR}$ and $S<em>{s}(I</em>{t-1}^{est})$ as input to feed the SRNet, reaching our objective $I_{t}^{est}$.</p><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/FRVSR.png" alt="FRVSR"></p><p>The final estimate $I<em>t^{est}$ of the framework is the output of the super-resolution network SRNet: $SRNet(I_t^{LR}\oplus S_s(WP(I</em>{t-1}^{est}\oplus UP(FNet(I_{t-1}^{LR}\oplus I_t^{LR})))))$.</p><h4 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h4><p>$\mathcal{L}_{sr} = ||I_t^{est} - I_t^{HR} ||_2^2$</p><p>$\mathcal{L}<em>{flow} = ||WP(I</em>{t - 1}^{LR}, F^{LR}) - I_t^{HR} ||_2^2$</p><p>由于没有实际的光流数据集，所以增加了一个辅助的loss帮助FNet生成更真实的光流。</p><p>$\mathcal{L} = \mathcal{L}<em>{flow} + \mathcal{L}</em>{sr}$</p><h4 id="FNet"><a href="#FNet" class="headerlink" title="FNet"></a>FNet</h4><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/FNet.png" alt="FNet"></p><h4 id="SRNet"><a href="#SRNet" class="headerlink" title="SRNet"></a>SRNet</h4><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/SRNet.png" alt="SRNet"></p><h4 id="Notations"><a href="#Notations" class="headerlink" title="Notations"></a>Notations</h4><ul><li>$\oplus$ denotes the concatenation of images in the channel dimension.</li><li>All convolutions in both networks uses 3×3 kernels with stride 1, except for the transposed convolutions in SRNet which use stride 2 for spatial <u>upsampling</u>. </li><li>The leaky ReLU units in FNet use a leakage factor of 0.2.</li><li>The notation 2× indicates that the corresponding block is duplicated. </li></ul><h4 id="Transposed-convolution"><a href="#Transposed-convolution" class="headerlink" title="Transposed convolution"></a>Transposed convolution</h4><p>Transposed convolution is one of upsampling methods(pixel shuffle can reduce the computational cost). It’s a special kind of convolution with zero paddings to expand the size of input image, then revolve the kernel and convolve again.</p><p>Tutorial: ://zhuanlan.zhihu.com/p/48501100</p><h4 id="Space-to-depth"><a href="#Space-to-depth" class="headerlink" title="Space-to-depth"></a>Space-to-depth</h4><p> $S_s:[0, 1]^{sH\times sW\times C}\rightarrow [0, 1]^{H\times W\times s^2C}$, mapping to LR space.</p><p>The operator can be formally described as $S<em>s (I)</em>{i,j,k} = I_{si+k\% s, sj + (k/s)\%s, k/s^2}$, with zero-based indexing, modulus % and integer division /.</p><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/space_to_depth.png" alt="space_to_depth"></p><p>PyTorch的实现</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">space_to_depth</span>(<span class="hljs-params">x, block_size</span>):</span><br>    n, c, h, w = x.size() <span class="hljs-comment"># 输入x只能为4维tensor的batch形式，否则warning</span><br>    unfolded_x = torch.nn.functional.unfold(x, block_size, stride=block_size)<br>    <span class="hljs-keyword">return</span> unfolded_x.view(n, c * block_size ** <span class="hljs-number">2</span>, h // block_size, w // block_size)<br></code></pre></td></tr></table></figure><h3 id="Based-methods"><a href="#Based-methods" class="headerlink" title="Based methods"></a>Based methods</h3><ul><li>Optical flow method.</li><li>Use bilinear interpolation as Warping module<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="M. Jaderberg, K. Simonyan, A. Zisserman, and K.Kavukcuoglu. Spatial transformer networks. In NIPS, 2015.">[1]</span></a></sup>, one of the innovative point.</li><li>Initialize the networks with the Xavier method<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="X. Glorot and Y. Bengio. Understanding the difficulty of training deep feedforward neural networks. In AISTATS, 2010.">[2]</span></a></sup>.</li><li>Train the model using Adam optimizer<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="D.Kingma and J.Ba. Adam: A method for stochastic optimization. In ICLR, 2015.">[3]</span></a></sup>.</li><li>Recurrent architecture for video super-resolution with shallow networks<sup id="fnref:4" class="footnote-ref"><a href="#fn:4" rel="footnote"><span class="hint--top hint--rounded" aria-label="Y.Huang, W.Wang and L.Wang. Bidirectional recurrent convolutional networks for multi-frame super-resolution. In NIPS, 2015.">[4]</span></a></sup>.</li></ul><h2 id="Evaluation-and-justifications"><a href="#Evaluation-and-justifications" class="headerlink" title="Evaluation and justifications"></a>Evaluation and justifications</h2><ul><li>所有大的计算量都在LR space完成。All computationally intensive operations should be performed in LR space, which significantly reduce the computational cost</li><li>利用$F^{HR}$去Warp$I_{t-1}^{est}$。Having direct access to the previous output can help the network to produce a temporally consistent estimate for the following frame, thus warping the previous HR estimate and feed it to the super-resolution network.</li></ul><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><ul><li>超越了sliding window的所有方法The FRVSR works more efficient than existing sliding window approaches. </li><li>在不同设置上都超出了baseline的表现The model outperforms competing baselines in various different settings. </li><li>The FRVSR, small model, produces results that are very close to the much larger model VSR 10-128 on the Vid4 dataset.</li><li>超过了VSR的sota方法The model also significantly outperforms sota video super-resolution approaches both quantitatively and qualitatively on a standard benchmark dataset.</li></ul><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>Other papars: C. Dong, C. C. Loy, K. He, and X. Tang. Learning a deep convolutional network for image super-resolution. In <em>ECCV</em>, 2014.</p><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Sajjadi_Frame-Recurrent_Video_Super-Resolution_CVPR_2018_paper.pdf">https://openaccess.thecvf.com/content_cvpr_2018/papers/Sajjadi_Frame-Recurrent_Video_Super-Resolution_CVPR_2018_paper.pdf</a></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>M. Jaderberg, K. Simonyan, A. Zisserman, and K.Kavukcuoglu. Spatial transformer networks. In <em>NIPS</em>, 2015.<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>X. Glorot and Y. Bengio. Understanding the difficulty of training deep feedforward neural networks. In <em>AISTATS</em>, 2010.<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span>D.Kingma and J.Ba. Adam: A method for stochastic optimization. In <em>ICLR</em>, 2015.<a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:4" class="footnote-text"><span>Y.Huang, W.Wang and L.Wang. Bidirectional recurrent convolutional networks for multi-frame super-resolution. In <em>NIPS</em>, 2015.<a href="#fnref:4" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:5" class="footnote-text"><span>虽然torch.nn.functional.pixel_shuffle 和tf.nn.depth_to_space的效果一模一样, PyTorch并没有能够实现tf.nn.space_to_depth的函数，不过我们可以通过torch.nn.functional.unfold去实现：<a href="#fnref:5" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:5" class="footnote-text"><span><a href="https://stackoverflow.com/questions/58857720/is-there-an-equivalent-pytorch-function-for-tf-nn-space-to-depth">https://stackoverflow.com/questions/58857720/is-there-an-equivalent-pytorch-function-for-tf-nn-space-to-depth</a>, 4:10 PM, 1/29/2021<a href="#fnref:5" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    <content type="html"><![CDATA[<p>In this paper, an end-to-end trainable frame-recurrent video super-resolution framework that uses the previously inferred HR estimate to super-resolve the subsequent frame is proposed.</p><a id="more"></a><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>作者提出了一种端到端的训练框架FRVSR，它使用前一个生成的HR估计帧加上当前的LR输入帧去估计下一帧的输出，有助于促进输出结果的时间连贯性，同时也减少了计算量。优点在于每帧都只被处理一次，并且采用循环框架，可以在更大时间范围内传播信息且不增加计算量。文章也进行了大量的实验，实验细节比较详尽，分析了不同网络设计的性能。</p><h2 id="Problem-Statement-and-Research-Objective"><a href="#Problem-Statement-and-Research-Objective" class="headerlink" title="Problem Statement and Research Objective"></a>Problem Statement and Research Objective</h2><p>The latest sota video super-resolution methods approach the problem by combining a batch of LR frames to estimate a single HR frame, but existing methods can’t reach a pleasing flickering artifacts to produce temporally consistent frames. To address the issues the authors exploit the temporal relationships in the input and improve reconstruction for video super-resolution by frame-recurrent framework.</p><h2 id="Method-s"><a href="#Method-s" class="headerlink" title="Method(s)"></a>Method(s)</h2><h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>The author relates <script type="math/tex">I^{LR}_{t-1}</script> and <script type="math/tex">I_{t}^{LR}</script> with optical flow network $FNet$, the output <script type="math/tex">F_{t}^{LR}</script> going through upsampling module to HR space <script type="math/tex">F_{t}^{HR}</script>. Then <script type="math/tex">F_{t}^{HR}</script> is used to warp the <script type="math/tex">I_{t-1}^{est}</script>, and the warped outputs are transformed by space-to-depth transformation to LR space, namely <script type="math/tex">S_{s}(I_{t-1}^{est})</script>. Finally, using the concatenation of <script type="math/tex">I_{t}^{LR}</script> and <script type="math/tex">S_{s}(I_{t-1}^{est})</script> as input to feed the SRNet, reaching our objective <script type="math/tex">I_{t}^{est}</script>.</p><p><img src="/img/FRVSR.png" alt="FRVSR"></p><p>The final estimate <script type="math/tex">I_t^{est}</script> of the framework is the output of the super-resolution network SRNet: <script type="math/tex">SRNet(I_t^{LR}\oplus S_s(WP(I_{t-1}^{est}\oplus UP(FNet(I_{t-1}^{LR}\oplus I_t^{LR})))))</script>.</p><h4 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h4><script type="math/tex; mode=display">\mathcal{L}_{sr} = ||I_t^{est} - I_t^{HR} ||_2^2</script><script type="math/tex; mode=display">\mathcal{L}_{flow} = ||WP(I_{t - 1}^{LR}, F^{LR}) - I_t^{HR} ||_2^2</script><p>由于没有实际的光流数据集，所以增加了一个辅助的loss帮助FNet生成更真实的光流。</p><script type="math/tex; mode=display">\mathcal{L} = \mathcal{L}_{flow} + \mathcal{L}_{sr}</script><h4 id="FNet"><a href="#FNet" class="headerlink" title="FNet"></a>FNet</h4><p><img src="/img/FNet.png" alt="FNet"></p><h4 id="SRNet"><a href="#SRNet" class="headerlink" title="SRNet"></a>SRNet</h4><p><img src="/img/SRNet.png" alt="SRNet"></p><h4 id="Notations"><a href="#Notations" class="headerlink" title="Notations"></a>Notations</h4><ul><li><script type="math/tex">\oplus</script> denotes the concatenation of images in the channel dimension.</li><li>All convolutions in both networks uses 3×3 kernels with stride 1, except for the transposed convolutions in SRNet which use stride 2 for spatial <u>upsampling</u>. </li><li>The leaky ReLU units in FNet use a leakage factor of 0.2.</li><li>The notation 2× indicates that the corresponding block is duplicated. </li></ul><h4 id="Transposed-convolution"><a href="#Transposed-convolution" class="headerlink" title="Transposed convolution"></a>Transposed convolution</h4><p>Transposed convolution is one of upsampling methods(pixel shuffle can reduce the computational cost). It’s a special kind of convolution with zero paddings to expand the size of input image, then revolve the kernel and convolve again.</p><p>Tutorial: ://zhuanlan.zhihu.com/p/48501100</p><h4 id="Space-to-depth"><a href="#Space-to-depth" class="headerlink" title="Space-to-depth"></a>Space-to-depth</h4><p> <script type="math/tex">S_s:[0, 1]^{sH\times sW\times C}\rightarrow [0, 1]^{H\times W\times s^2C}</script>, mapping to LR space.</p><p>The operator can be formally described as <script type="math/tex">S_s (I)_{i,j,k} = I_{si+k\% s, sj + (k/s)\%s, k/s^2}</script>, with zero-based indexing, modulus % and integer division /.</p><p><img src="https://github.com/xuboshen/xuboshen.github.io/tree/master/img/space_to_depth.png" alt="space_to_depth"></p><p>PyTorch的实现</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">space_to_depth</span>(<span class="hljs-params">x, block_size</span>):</span><br>    n, c, h, w = x.size() <span class="hljs-comment"># 输入x只能为4维tensor的batch形式，否则warning</span><br>    unfolded_x = torch.nn.functional.unfold(x, block_size, stride=block_size)<br>    <span class="hljs-keyword">return</span> unfolded_x.view(n, c * block_size ** <span class="hljs-number">2</span>, h // block_size, w // block_size)<br></code></pre></td></tr></table></figure><h3 id="Based-methods"><a href="#Based-methods" class="headerlink" title="Based methods"></a>Based methods</h3><ul><li>Optical flow method.</li><li>Use bilinear interpolation as Warping module<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="M. Jaderberg, K. Simonyan, A. Zisserman, and K.Kavukcuoglu. Spatial transformer networks. In NIPS, 2015.">[1]</span></a></sup>, one of the innovative point.</li><li>Initialize the networks with the Xavier method<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="X. Glorot and Y. Bengio. Understanding the difficulty of training deep feedforward neural networks. In AISTATS, 2010.">[2]</span></a></sup>.</li><li>Train the model using Adam optimizer<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="D.Kingma and J.Ba. Adam: A method for stochastic optimization. In ICLR, 2015.">[3]</span></a></sup>.</li><li>Recurrent architecture for video super-resolution with shallow networks<sup id="fnref:4" class="footnote-ref"><a href="#fn:4" rel="footnote"><span class="hint--top hint--rounded" aria-label="Y.Huang, W.Wang and L.Wang. Bidirectional recurrent convolutional networks for multi-frame super-resolution. In NIPS, 2015.">[4]</span></a></sup>.</li></ul><h2 id="Evaluation-and-justifications"><a href="#Evaluation-and-justifications" class="headerlink" title="Evaluation and justifications"></a>Evaluation and justifications</h2><ul><li>所有大的计算量都在LR space完成。All computationally intensive operations should be performed in LR space, which significantly reduce the computational cost</li><li>利用<script type="math/tex">F^{HR}</script>去Warp<script type="math/tex">I_{t-1}^{est}</script>。Having direct access to the previous output can help the network to produce a temporally consistent estimate for the following frame, thus warping the previous HR estimate and feed it to the super-resolution network.</li></ul><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><ul><li>超越了sliding window的所有方法The FRVSR works more efficient than existing sliding window approaches. </li><li>在不同设置上都超出了baseline的表现The model outperforms competing baselines in various different settings. </li><li>The FRVSR, small model, produces results that are very close to the much larger model VSR 10-128 on the Vid4 dataset.</li><li>超过了VSR的sota方法The model also significantly outperforms sota video super-resolution approaches both quantitatively and qualitatively on a standard benchmark dataset.</li></ul><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>Other papars: C. Dong, C. C. Loy, K. He, and X. Tang. Learning a deep convolutional network for image super-resolution. In <em>ECCV</em>, 2014.</p><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Sajjadi_Frame-Recurrent_Video_Super-Resolution_CVPR_2018_paper.pdf">https://openaccess.thecvf.com/content_cvpr_2018/papers/Sajjadi_Frame-Recurrent_Video_Super-Resolution_CVPR_2018_paper.pdf</a></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>M. Jaderberg, K. Simonyan, A. Zisserman, and K.Kavukcuoglu. Spatial transformer networks. In <em>NIPS</em>, 2015.<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>X. Glorot and Y. Bengio. Understanding the difficulty of training deep feedforward neural networks. In <em>AISTATS</em>, 2010.<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span>D.Kingma and J.Ba. Adam: A method for stochastic optimization. In <em>ICLR</em>, 2015.<a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:4" class="footnote-text"><span>Y.Huang, W.Wang and L.Wang. Bidirectional recurrent convolutional networks for multi-frame super-resolution. In <em>NIPS</em>, 2015.<a href="#fnref:4" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:5" class="footnote-text"><span>虽然torch.nn.functional.pixel_shuffle 和tf.nn.depth_to_space的效果一模一样, PyTorch并没有能够实现tf.nn.space_to_depth的函数，不过我们可以通过torch.nn.functional.unfold去实现：<a href="#fnref:5" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:5" class="footnote-text"><span><a href="https://stackoverflow.com/questions/58857720/is-there-an-equivalent-pytorch-function-for-tf-nn-space-to-depth">https://stackoverflow.com/questions/58857720/is-there-an-equivalent-pytorch-function-for-tf-nn-space-to-depth</a>, 4:10 PM, 1/29/2021<a href="#fnref:5" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
     
     
@@ -134,30 +181,112 @@
   
   
   <entry>
-    <title>anaconda useful commands</title>
-    <link href="/2021/01/27/anaconda-useful-commands/"/>
-    <url>/2021/01/27/anaconda-useful-commands/</url>
+    <title>passage7</title>
+    <link href="/2020/07/30/passage7/"/>
+    <url>/2020/07/30/passage7/</url>
     
-    <content type="html"><![CDATA[<h1 id="Basic-usage-of-conda"><a href="#Basic-usage-of-conda" class="headerlink" title="Basic usage of conda"></a>Basic usage of conda</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># managing conda</span><br>conda --version <span class="hljs-comment"># check the installation and version</span><br>conda update conda <span class="hljs-comment"># update the conda to the latest version</span><br><br><span class="hljs-comment"># managing environment and python</span><br>conda create -n name python=<span class="hljs-number">3.8</span><span class="hljs-comment"># create a new virtual environment</span><br>conda activate name   <span class="hljs-comment"># activate the environment</span><br>conda info --envs   <span class="hljs-comment"># to see a list of all your environments</span><br>conda activate       <span class="hljs-comment"># return to base</span><br>python --version   <span class="hljs-comment"># to check the version of python</span><br><br><span class="hljs-comment"># managing packages</span><br>conda search torch   <span class="hljs-comment"># check to see if a package you have not installed named &quot;torch&quot; is available from the Anaconda repository (online)</span><br>conda install pandas   <span class="hljs-comment"># install a certain package</span><br>conda <span class="hljs-built_in">list</span>  <span class="hljs-comment"># list all packages installed in the environment</span><br><br><br></code></pre></td></tr></table></figure><p>For the packages not in Anaconda, we can simply use the pip command to install them.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="【泛哲】从学生的角度，切入人生的追求、"><a href="#【泛哲】从学生的角度，切入人生的追求、" class="headerlink" title="【泛哲】从学生的角度，切入人生的追求、"></a>【泛哲】从学生的角度，切入人生的追求、</h1><p><strong>2020年7月30日 18:03</strong></p><p>    其实每个人，每个时期都会有这种感觉—哪怕是一个人上中学的时候可能会觉得—如果单纯从形容一只猪的状态下来形容一个学生，那么这个学生可能是很幸福的：因为他不需要去考虑生活的压力、家里的经济情况、社会的偏见，只需要去考虑怎样做好题，去考一个好的大学就行了。每一个已经进入社会上的人都会以过来人的语气对你说：哇你好幸福啊，你没有生计的压力，不需要养家，不需要看上司的脸面行事。但是身为学生的我们都知道，身为学生的压力有多大，我们有着我们自己笔耕的战场，我们有作业、考试、排名，我们有想要考到的分数，有想超越的学霸；也存在把自己的全部都交给考试的孩子，对他们来说，考试就是他们的全部，输了就像在战场上苍凉地死去。难道就凭“学生只用学习”，能说学生们没有生存的压力，所以我们的每一天都很美好，值得羡慕吗？学生们就没有值得抱怨的事情了吗？当然不能啊，每个学生都会有自己心里的坎，有着难以言喻的感伤和痛苦，有着很多梦想、目标，有着很多很多想要达成的琐碎，每个阶段的人都有每个阶段待完成的任务，你不能说一份压力比另一份大，你的辛苦比我的辛苦要多，每个人不都是怀着各自的辛苦，拼命地活着吗？那句中二名言“我的痛苦，在你之上”，被这句话浇盆冷水的人，也许也应该是口无遮拦话不过脑子的大人。<br>    谈到生活的窘迫，对每个人而言都有自己的战场，对创作者而言，视频创作/室内设计等等就是他们的战场；对学生而言，考试、学习就是他们的战场，战场上的每个战士都想在战场上尽可能地多争取一些功绩，就跟在学习上也想去争一些，比如满分，比如第一，然而争到最后发现，自己在学习上面确实不是那么有天赋的，总是比不过真正的学霸，在学生眼里，他们仿佛是无所不能的神，心里自然酝酿着苦涩，也承认要做到那样太过辛苦了。所以在这时，&lt;躺平&gt;的介入可以让一个人更加心平气和地接受自己的不足，换一个舞台，不用在学习上对自己放太高的要求，不用在排名上苛责自己，在其他的领域去闪闪发光。<br>    我们在中学的时候都经历过，考试完后偷偷跟别人对答案，或者试探着从别人口中套分数，会贱贱地想：“哦Ta这次没考好，那我就可能是第一了。”“我*，这种傻*题我也能错？满分没了。”，在学习上想达成的目标有，但有时真的往往达不到地时候，其实如果&lt;战略性撤退&gt;，退一步，然后换一个让你能够作为事业的东西，会让内心好受很多，也在事实上可能会让一个人寻找到合适的人生方向，我觉得真的不必苛责每个人的一生都是硬干的一生、奉献的一生，为了活得自在而选择逃避的一生并不可耻并且有效（请勿歪曲、极端理解逃避的意味），远离掉那些让你极其别扭的，让你感到厌恶的事情，逃避掉那些让你苦苦寻觅而始终不得的事情，不必强求，不必如此在乎，躺平，然后选择适合自己的道路即可。不走入死胡同，自己始终保持阳光的自己，固然“天将降大任于斯人也”，然而我们要告诉自己，不必“苦其心志，劳其筋骨，饿其体肤”了，现代社会里，能够让你体面地活着又不失自我的方式很多，大胆去选择与尝试，退一步，看到自己人生的栖息地，内心将走向彼岸。</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2021/01/17/hello-world/"/>
-    <url>/2021/01/17/hello-world/</url>
+    <title>passage5</title>
+    <link href="/2020/06/19/passage5/"/>
+    <url>/2020/06/19/passage5/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><p>Notice: <code>hexo clean</code> before <code>hexo g or hexo s</code></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="Set-abstract"><a href="#Set-abstract" class="headerlink" title="Set abstract"></a>Set abstract</h3><p><code>正文的一部分作为摘要&lt;!-- more --&gt;余下的正文</code></p><h3 id="Add-footnotes"><a href="#Add-footnotes" class="headerlink" title="Add footnotes"></a>Add footnotes</h3><p><code>This is a sentence&lt;sup id=&quot;fnref:1&quot; class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--rounded&quot; aria-label=&quot;This is the corresponding footnote.</code><br>“&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;         <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the corresponding footnote.```<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="谁不无聊，谁懂孤独"><a href="#谁不无聊，谁懂孤独" class="headerlink" title="谁不无聊，谁懂孤独"></a>谁不无聊，谁懂孤独</h1><!-- wp:paragraph --><p>无聊是一颗空洞的内心，它躁动着，渴望着物欲，是没有真正内心需求与渴望之人产生的虚空之物，无聊意味着没有期待，没有心之所向，没有佛的仁慈也没有人的正义，只留下空空如也，只对人世间一切刺激精神与肉体的活动感到兴奋，最终沦为物欲的玩偶，回归初始，从未真正存在过。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>孤独是一种静寂的状态，是樱花飘落，花独开七日的孤芳自赏，是寂寞而淡然的境界。尽管孤独的人忍受着孤独的状态，但是仍然享受着孤独，因为在等待着与自己灵魂对话的另一个人，孤独的人拥有丰富的精神生活与心路历程，而这种内在的丰富是值得被发掘与分享的宝藏。拥有完整人格的自己，然后只需静静等待，或许等不到结果转而自恋，也或许能够等到那个灵魂伴侣，但是结果如何都不是第一重要的了，人事已尽，天命难违，历史的长河中既不会记录下你的来过，也不会对你的离去多些笔墨，但是你真正存在过，这是你之于你自己的意义所在。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>其实少年时候说的孤独，多为强说愁，可越长大越孤单，孤独感也一直在变，最开始以为自己真的是胸怀屠龙术的屠龙少年，总是中二般地孤独，我时常觉得自己是个真二次元，但又不够二次元，不过我的确是个二次元，这毫无疑问。到现在我已经说不清楚自己的感觉到底是孤独还是无聊了，难以判定自己的内心是空心还是实心的，多少对自己还是有些难以理解吧，也许人一辈子都理解不了自己呢，不然怎么会有和两个自己做朋友的做人方式这样看上去很精分的理论和依据呢。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>总之，希望意识到无聊的部分并稍稍想想它要不要这样无聊下去，希望孤独的部分不要将精神压垮而轻生。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>人总归是复杂而不能一概而论的，人性总归也是多面而难以综合考虑的，认识你自己？我认识不了我自己。</p><!-- /wp:paragraph -->]]></content>
     
     
     
     <tags>
       
-      <tag>Tutorial</tag>
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage5</title>
+    <link href="/2020/05/15/passage4/"/>
+    <url>/2020/05/15/passage4/</url>
+    
+    <content type="html"><![CDATA[<h1 id="数模校赛日记"><a href="#数模校赛日记" class="headerlink" title="数模校赛日记"></a>数模校赛日记</h1><!-- wp:paragraph --><p>DAY1.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>下午提前二十分钟发题了，果不其然A题是一个和疫情相关开放性题目，需要自己搜索查找数据，并自行建模分析，最后还要求写一份两页的新闻；B题是一个相对硬核的题目，要求设计一个搜索和匹配算法，我有思路，但不知道数据怎么导出是个问题，<s>虽然转word应该就可以了</s>，不过队里只有我会一点点算法，选B的话可能压力就全在我身上了<s>怂</s>，晚上还是由于担心自己写不出来程序放弃了B题选了A题，<s>我现在就是非常后悔。</s></p><!-- /wp:paragraph --><!-- wp:paragraph --><p>在转化问题的过程中陷入了一个思维定式，之后发现了及时指出来了，但是核心问题仍然没有思路一如何建立模型，层次分析法并不好在这里用，而拟合需要数据支撑，<s>md找了半天还找不到数据</s>，查资料到晚上心态已经隐隐开始炸裂了，于是队内讨论直接闭麦避免影响队友了。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>到凌晨的时候又仔细审了一遍题目，多少提出了一个可实践的想法，跟队长讨论了一会觉得可行，于是第一天就在凌晨两点钟结束了，还好他们都算健谈，我无需多说不必要的话活跃气氛，不过队长小天使还是蛮贴心地安慰了我，<s>虽然我日常心态炸裂</s>。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>DAY2.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>首先。。我昨晚居然做了个噩梦七点惊醒了。。唉。。8提了。。顺手点进群里没人讨论，然后转头就睡到了10点。上完离散数学之后便陷入了呆滞之中，盯着屏幕，风扇声呼啦呼啦的，键盘滚烫，滴答，滴答，小孩在小区欢欣地喧闹，家里人吆喝着吃饭，我一动不动地发呆，不知道该做什么，困意席卷，眼睛有些胀痛。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>一点的时候队长讲话了，两点半讨论，我索性就着绵绵睡意躺了下去，意识模糊，也不知道睡没睡着，总之看着时间点，两点半的时候便是醒了。讨论了一会也不知道说了什么，就好像那个搓大力螺旋丸的某校会长一样，懂的都懂，我毕竟只是个啥都不懂的废物。下午看了一会建模的书和几篇论文，模型是可以借鉴的，干脆奉行“拿来主义”，便将模型套上，可是没有数据，我也不会，队友很积极地用爬虫爬了很多数据，我写了一份简单的C语言将数据清了一遍得到想要的几列，然后导入excel里瞎搞一通，得到了结果，看着就几行的代码，在队友面前自行惭愧，不再说什么，完成了论文的一部分之后，时间便走到了现在。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>我感到很对不起队友，以这样糟糕的状态参赛，可能多少影响到了他们的情绪吧，我真想把头钻到被窝里像沙包一样被揍一顿，<s>可是太疼了还是算了</s>，队友都是小天使，只有我是小恶魔，糟蹋别人的体验我好像也是惯犯了，额，也许我还是不适合和人交往吧，就这一点来讲，我永远伤害着身边的人。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>离比赛结束还有两天，我仍然提不起劲，也不祈求队友的宽恕了，若是被骂就被骂吧，与其让队友认真参赛却没获奖，不如我划起水来让他们有个怪罪的人，负责的是我，不负责的也是我，不成熟的仍然是我，画风变得矫情起来，每次都是，睡一觉起来便万事大吉吧。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>DAY3.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>早晨睡到十点自然醒，于是开始胡思乱想。。在下午终于终于把问题一二的解决方案想好了，然后就是无尽的搜查数据。。说真的数学建模没了数据都是白搭，只有不断通过数据的检验来修正模型才是正确的建模，但现在我们能力有限。。只能造数据。。艹，这会不会成为我的学术污点，我的学术生涯还没开始，就这样结束了？这么想着，不无绝望和戏谑地开始胡编乱造。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>什么是数学建模呢？大概就是：诶这个数据能用记一下记一下，诶那个论文写得好啊好啊拿过来套用一下，哦哦哦这个好欸写进我的论文里，那个好像也挺好，哇艹这个论文完全就是标准答案啊，我后悔没早点看到了，全部换个皮原样照搬！......太爽了！这就是我的论文<s>（菲克力我草。。。</s></p><!-- /wp:paragraph --><!-- wp:paragraph --><p>然后晚上近乎通宵了。。一直到了凌晨四点半，意外地一点也不困，可能<s>tm跟我持续打了十多只蚊子有关</s>，但是最后还是得睡觉，太晚睡觉的话，会孤单而难过的。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>DAY4<s>（其实跟DAY3接近无缝衔接</s></p><!-- /wp:paragraph --><!-- wp:paragraph --><p>这一天。。陷入了无限的数据编写<s>伪造</s>和学术借鉴<s>造假</s>中。。。我不禁陷入沉思，最近发现了某个自我：我一点都不想要这样的论文。。。我也一点不想参加这样的竞赛，我还是一个喜欢几个月沉浸一到两件事情里去做的人。。所以一天到晚我学了点excel、matlab，画了两张图然后排了排版，论文就这么<s>裁好了</s>写好了。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>晚上之前就要交论文，讲实话我想多和队友说说话，都不无聊嘛，或者无聊也不敢跟我讲话。。唉。。我。。我是真滴无聊。。啥事都不干就搁这学术造假，md我忍不了了，一会煮一碗火鸡面吃。。气死我惹。。呜呜呜呜呜呜呜。。我要做一个表面安分守己好好上课不参加竞赛不参加实习的乖宝宝，<s>背地里偷偷看国外公开课沉浸计算机的世界里慢慢成长</s>，在这个环境里太容易被同质化惹，前段时间和盆友交流的时候突然意识到的事情，我根本不必如此逼我做没有必要且不想做的事情，去做竞赛都是想着加分的。。但是加分有啥用呢。。加完过后除了一纸空凭啥都不是。。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>论文还差一丢丢就写完惹</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>不过这次比赛也算看清了自己的部分真实想法。。。现在tm亏是挺亏的，但赚在feelingXD。。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>DAY N后</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>怎么说呢，合作关系就像球场，上场的时候大家齐心协力，有欢笑有怒吼有和谐有配合，但下场后，大家都累的说不出话了，会因为场上的表现而默不作声，或者热闹得欢腾。我挺喜欢这次组队的队友的，但他/她看得出来也是很独立的人，我是不能参与到他们的人生中的，只是过客，只有在比赛的时候可以说我们是在一起的，但是过后呢，挥手送别，他们都有自己更精彩的生活，与我这样的人不一样，他们会更加积极地面对自己的负面情绪调整好自己的面貌，每个人都有自己的情绪，但他们很厉害或者很成熟地隐藏起来，不知为何，我很心疼，但什么话也说不出来，一个对他们生活其实全然不了解的我没有理由，也不配安慰他们，我很难过。</p><!-- /wp:paragraph -->]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage3</title>
+    <link href="/2020/05/08/passage3/"/>
+    <url>/2020/05/08/passage3/</url>
+    
+    <content type="html"><![CDATA[<h1 id="夜深人静"><a href="#夜深人静" class="headerlink" title="夜深人静"></a>夜深人静</h1><!-- wp:paragraph --><p>雨水落在棚上，滴滴答答的声音透过玻璃窗像从另一个世界传来的一样，一丝丝失落的情绪逐渐又在心口滋生。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>和以前所有被月亮照得无力的夜晚一样，我深深地感受到自己是那么普通，不论从哪个角度上都是亮点全无的常人。但不同的是，我没有为遥不可及而无法触及的未来颤抖，放下了心中曾不肯放弃的东西。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>试着接受自己只是一个普通人，是一个新的开始。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>不必把自己太当回事了，尽管也并没有；不必为自己说不出口的话而难为情，尽管有时难以开口；不要为自己的一事无成找后路，笨人就该有笨人的活法。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>我可以接受自己不能成为巨擘，但我无法接受黑白不辨，一无所知的自己。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>我首先是一个人，然后才去发挥人的主观能动性去探索自我然后实现自我价值，如今过了半年多的生活—关于这如果想的起来的话再写一篇来记录新的生活和牢骚—掌控我生活的钥匙仍然紧紧握在我的手里，像是戴着眼镜找眼镜一样找能够满足自己的乐趣所在岂不笑话。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>也真的真的重复又重复，不必担心别人的异样眼光。比自己境界高的人看透了自己的行为自然有其独特看法不说，比自己眼界轻薄的人也无须得到其认可，常常与其辩经只是鸡同鸭讲。尽管个性和心理有某些方面的缺失，但至少表现出来，能够正常交流正常配合正常反应吧。 </p><!-- /wp:paragraph --><!-- wp:paragraph --><p>每一次，每一次夜深的时候，忍不住就开始像蚕一样吐出厚厚的丝将自己完全包缚，都要像这样把想法写下来才能得到心里片刻的宁静，有时会觉得自己是不是抑郁，但显然我是个正常人，任何生理机能和日常行为都没有受到影响，最多是个满腹牢骚的颓丧青年强说愁而已—希望是强说愁吧。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>最后不无忧愁地引一句海子的诗：我只愿面朝大海，春暖花开。这句诗本不该是阳光灿烂的诗，只愿只愿，这是有多无奈的两个字啊。</p><!-- /wp:paragraph -->]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage2</title>
+    <link href="/2020/05/03/passage2/"/>
+    <url>/2020/05/03/passage2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="浅谈友情"><a href="#浅谈友情" class="headerlink" title="浅谈友情"></a>浅谈友情</h1><!-- wp:paragraph --><p>人都是社会人，从出生起便由于血缘与人产生了一系列的关系，而朋友关系独立于血缘以外，平行于婚恋关系，是容易触及彼此心灵深处又难以割舍的关系，在我目前的思考体系中，主要产生了几种朋友关系，而其核心都在于我愿意相信，所谓付出真心，随缘而行而不全然肤浅，有所依赖而不全然依靠，情愿祝福而常不打扰。没有哪一种朋友比另一种更加高尚，每个人在不同的人面前展现的自己自然不同，磨合到一定程度便是在彼此的舞台中合适的样子。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>我和有些朋友，不常联系，彼此发消息都三天两天回一次，也许内容是询问，也许是分享，又或者是诉苦，有时看到了也不作回复，你来我往倒像是哪一方在这里而另一方跨了太平洋在美洲对话一样。我称其为尊重彼此的空间，想聊时我们聊，不想聊时我们都有瞬间终止话题或者开始话题而不在意对方感受的共识。理解彼此有彼此的难处和生活的圈子，在相互交错的人生中做到理解彼此，理解人与人之间的关系，并放下架子从零面对彼此。从此方角度来看，不担心终结这段关系，也怀有祝愿对方活得更像自己更自我的心愿，像是两位船夫为彼此送别，下一次见可能是打渔卖鱼后的几个月后，仍然停停聊聊，有彼此看向的方向，不耽搁，不儿女情长，简单朴素不加粉饰，是我对友情幻想中最终极的形态。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>对于有的朋友，我又时常叨扰，偶尔臊皮，耐不住情绪，凡是想法先吐槽，用千层饼做比喻，就是在第一层的时候叽叽喳喳，然后再是其它，从不犹豫耽搁别人时间，从不后悔自己毫不掩饰的破口大骂。这样的朋友性格绝不官方，绝不皱眉严肃，可能内心已经在喊mmp了，但我仍旧展示这样不加修饰的我自己，因为信任而毫无顾忌，不担心后背受敌，该孤军奋战的时候绝不两个人，该两个人的时候也交出自己的后背。有人认为能让你展现真实自己的朋友才是真的朋友，但“朋友”儿子的定位未免过于模糊，对于“真实自己”的定位也模糊极了，不过也有一定的道理，但这决定于彼此的性格和相遇后产生的一系列反应，对于某些人你忍不住就含着笑意并像儿时关系一般纯粹。这样的彼此是包容彼此个性的朋友，某种意义上来讲，如果你享受裸睡，你也会享受这种感觉。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>同样，假如哪些人有自己真正的梦想而我了解到的话，我会尽我所能提供帮助，自觉不打扰，并默默祝福。我并不会认为杂谈能加深彼此的感情，也同样不希望这样的人积极回报，我祝福对待梦想拥有赤子之心的人，如果能目睹这样的梦想实现，我也对世间添以感动的色彩，梦想永远是最纯洁不容糟蹋的事物，即使看上去是那么的蠢那么的古老和幼稚，可我坚信，梦想才是人走到末路的时候能够把握的最后的502胶水，拼命地粘死活着的勇气和现实的残忍。所以这样的人即使他不认我为朋友，我也会当个舔狗，有所及之事便尽力援手，希望为Ta的梦想添砖加瓦。这样的人或许和我不是一路人，但终究是纯良的人，始终纯良如一的人不应该受到谴责和失败。只有“梦想成真”四个字与其最为搭配。我对这样的朋友致以最纯朴的期待。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>还有一种朋友，是久别重逢，时过境迁人也同岁月改变着。我其实不愿称其为朋友关系，更像是回到对过去某些时候的契机，彼此短暂地不属于现在的时空而回到彼时、彼刻。近来有些同学聚会就是如此，不管现在是什么样的，过得滋润或是艰难，性格逐渐暴躁还是修得温润，我们都在这段时间里仿佛回到了那时那刻，一张“体验卡（时长1天）”消费掉，沉浸在过去的回忆里，被尘封的记忆匣子打开了，然后过去的画面携着水雾浮上眼前，有时回忆这东西就这么戳中心口，它分明不属于此情此景，却在此情此景上平添一层老相机的灰黄色。他们可能是你的朋友，也可能已经不是了，但是在所有人聚在一起的时刻，跨过了所有距离，仍然是那时的朋友。如有缘情可续，如无缘，只当梦一场，梦时欢笑到梦醒，梦醒时分，月明星稀，心中漾起波澜之余，等下一次天亮。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>当然，朋友既不是工具，也不是物品，并不能简单地分门别类打上标签存起来，上述情景既是彼此分离，又是相互融合的，不论如何，贯穿其中的只有“真心”二字值得细品，其余的统统需要结合具体情况具体分析。人不是理性人，在朋友中也难以以一以贯之的态度对待，毕竟我们每个人，都在彼此的舞台上扮演着下一秒可能会有新剧本的戏剧。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>朋友啊，朋友啊，在这个虚伪的世界里“相信”的成本越来越高了，可是因为“相信”，所以才“看见”啊，如果你犹豫是否应该“相信”，我更殷切地希望你去“相信”，因为“相信”的人才能“看见”，“相信”的人才拥有并支配了“远方”，我选择“相信”，无论时间得出的结论如何，我都执着地去“相信”。</p><!-- /wp:paragraph -->]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>passage1</title>
+    <link href="/2020/04/30/passage1/"/>
+    <url>/2020/04/30/passage1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="第一次开通博客"><a href="#第一次开通博客" class="headerlink" title="第一次开通博客"></a>第一次开通博客</h1><!-- wp:paragraph --><p>        当我做出任何一个决定的时候，是难以预见未来会发生怎样的变故的，与其一边向往未来的美好生活一边又精神上的自我放弃，不如把握每一个当下，不放过每一个萌生的想法，现在这也是其中一个。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>        往往“想法”是被大多数人糟蹋的，有了想法而为自己找种种借口而让它消亡在你的脑海里，谓之可惜。而受传统谨言慎行思想的我又为表达自己而感到难为情，即便是满是熟人的qq空间，或偶尔有人点开的知乎页面，往往会因为想法可能对别人造成不好的影响或浪费别人的时间而感到羞愧甚至于很长一段时间连点进空间浏览都是一件极可怕的事情。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>        但是任何人都有表达或展现的欲望，任何人也都有否认别人的权利和拒绝改变自己的执念。作为芸芸众生中毫不起眼的我同样不例外，既然我有表达自己的需求又暂时无法做到听之坦然失之淡然的境界，那么有没有这样一个地方，不去刻意想的话就不会出现在脑海里，一旦想起来，可以随时点进去而且可以随性地到处逛逛呢？自己开博客的想法油然而生，作为纯粹写给自己的地方，不为分享，不为功名利禄，不会为自己带来任何实质性的帮助而只是给予自己精神上的充实，我想这也大概就是我众多幻想中的桃花源吧。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>        关于我对个人网站的定位呢，目前认为会主要记录个人想法/经历以及一些学习的简单心得体会。个人想法方面因为阅读速度慢下来了，为自己留下的思考空间多了起来，即使个人希望有成体系的见解，但短时间是做不到的，只能慢慢摸索。关于学习心得的话，我理解一个很朴素的道理：在相对基础的领域里，别人家的笔记永远是别人整理自己思路用到，每个人都一定需要积累对于真理/方法的第一感受，而不能永远停留在别人的笔记中，也可以说是不尽然规范的三次文献中，即使通过三次文献入门，也绝不能陷入其中，入门后就一定要通过官方的文献资料也好书本也好去理解，从而通过对原始材料的加工形成自己的体系。所以此后也为了方便自己整理思路，我不像以前那样机械地记录笔记了，希望能建立自己的思考。</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>        所以呢，对于在看的游客，你发现了这里<s>我悄悄的告诉了你</s>，它无声地欢迎你来；你关闭离开，我和我的博客也仍然在这里。</p><!-- /wp:paragraph -->]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>文章迁移</tag>
       
     </tags>
     
